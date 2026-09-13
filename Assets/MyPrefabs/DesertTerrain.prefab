@@ -174,6 +174,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5635648308888094064, guid: 3537735f44b9d204381419a13edd25bf, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1453140283060284933, guid: 3537735f44b9d204381419a13edd25bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3537735f44b9d204381419a13edd25bf, type: 3}
       propertyPath: m_Name
       value: PathTerrainDesert
