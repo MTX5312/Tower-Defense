@@ -9,8 +9,8 @@ public class EnemyController : MonoBehaviour
 
     [Header("Estadisticas")]
     public float health = 100f;
-    public float moveSpeed;
-    public float rotationSpeed;
+    public float moveSpeed = 0.1f;
+    public float rotationSpeed = 10f;
 
     [Header("Waypoints")]
     public List<Transform> wayPoints = new List<Transform>();

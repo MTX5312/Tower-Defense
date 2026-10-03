@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75693a35e7daa2d459b1befd321b44c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  enemyPrefab: {fileID: 1736375893503714175, guid: 98474833b4f2d9643a6babba392d58dd, type: 3}
+  enemyPrefab: {fileID: 7186169987932396255, guid: de86ceba82716ad448a9876432410dfd, type: 3}
   spawnInterval: 3
   totalEnemies: 10
   pathWaypoints:
