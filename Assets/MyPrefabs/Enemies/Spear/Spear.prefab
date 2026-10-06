@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6306837463304852716}
   m_Layer: 0
   m_Name: Spear
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,13 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   animator: {fileID: 8886797293271965453}
-  health: 100
+  maxHealth: 100
   moveSpeed: 0.1
   rotationSpeed: 10
   wayPoints: []
-  wayPointIndex: 0
-  distance: 0
-  moving: 0
 --- !u!136 &7125004778639891807
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -131,11 +128,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ec9ce9573683d684aa75013daec3884d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ec9ce9573683d684aa75013daec3884d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ec9ce9573683d684aa75013daec3884d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -143,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ec9ce9573683d684aa75013daec3884d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ec9ce9573683d684aa75013daec3884d, type: 3}
       propertyPath: m_LocalRotation.z
@@ -155,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ec9ce9573683d684aa75013daec3884d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ec9ce9573683d684aa75013daec3884d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

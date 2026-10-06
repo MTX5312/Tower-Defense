@@ -43,7 +43,6 @@ public class EnemySpawner : MonoBehaviour
         if (pathScript != null)
         {
             pathScript.wayPoints = new List<Transform>(pathWaypoints);
-            pathScript.StartMoving();
         }
     }
 }

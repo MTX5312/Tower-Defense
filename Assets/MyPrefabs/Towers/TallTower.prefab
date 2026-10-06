@@ -244,8 +244,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8430328043542552081, guid: 3484f7eb493d64c4c8146e3a664a18fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3838396632023145739}
   m_SourcePrefab: {fileID: 100100000, guid: 3484f7eb493d64c4c8146e3a664a18fc, type: 3}
+--- !u!1 &4482671540114227861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8430328043542552081, guid: 3484f7eb493d64c4c8146e3a664a18fc, type: 3}
+  m_PrefabInstance: {fileID: 5389450528237100164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3838396632023145739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482671540114227861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 412e8ecd4f218b4468378b580de16a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerController
+  range: 1
+  fireRate: 0.5
+  enemyTag: Enemy
+  projectilePrefab: {fileID: 5981917599448000752, guid: 167a93fe02bacd54e85b85b08eef617e, type: 3}
+  firePoint: {fileID: 6787741684275024960}
 --- !u!4 &6787741684275024960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1511463081506375876, guid: 3484f7eb493d64c4c8146e3a664a18fc, type: 3}
