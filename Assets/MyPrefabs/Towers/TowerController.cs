@@ -61,7 +61,15 @@ public class TowerController : MonoBehaviour
 
     void Shoot()
     {
-        GameObject projGO = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        if (projectilePrefab != null && firePoint != null && target != null)
+        {
+            GameObject projectileGO = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+            ProjectileController projectile = projectileGO.GetComponent<ProjectileController>();
+            if (projectile != null)
+            {
+                projectile.SetObjective(target);
+            }
+        }
     }
 
     void OnDrawGizmosSelected()
