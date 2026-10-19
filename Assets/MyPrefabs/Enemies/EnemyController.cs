@@ -23,7 +23,7 @@ public class EnemyController : MonoBehaviour
     [Header("Ataque al Castillo")]
     public CastleController castle;
     public float castleDamage = 10f;
-    public float castleAttackInterval = 1.5f;
+    public float castleAttackInterval = 2f;
 
     private bool hasReachedCastle = false;
     private float attackTimer = 0f;
@@ -31,6 +31,19 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+
+        if (animator == null)
+        {
+            animator = GetComponentInChildren<Animator>();
+        }
+
+        if (animator == null)
+        {
+            Debug.LogWarning(
+                "No se encontró un Animator en el enemigo: " +
+                gameObject.name
+            );
+        }
     }
 
     void Update()
@@ -50,11 +63,14 @@ public class EnemyController : MonoBehaviour
     void MoveAlongPath()
     {
         if (wayPoints == null || wayPoints.Count == 0)
+        {
+            SetMoving(false);
             return;
+        }
 
         if (wayPointIndex >= wayPoints.Count)
         {
-            hasReachedCastle = true;
+            ReachCastle();
             return;
         }
 
@@ -65,10 +81,14 @@ public class EnemyController : MonoBehaviour
             wayPointIndex++;
 
             if (wayPointIndex >= wayPoints.Count)
-                hasReachedCastle = true;
+            {
+                ReachCastle();
+            }
 
             return;
         }
+
+        SetMoving(true);
 
         Vector3 targetPosition = targetWaypoint.position;
         Vector3 direction = targetPosition - transform.position;
@@ -97,10 +117,20 @@ public class EnemyController : MonoBehaviour
 
             if (wayPointIndex >= wayPoints.Count)
             {
-                hasReachedCastle = true;
-                attackTimer = 0f;
+                ReachCastle();
             }
         }
+    }
+
+    void ReachCastle()
+    {
+        if (hasReachedCastle)
+            return;
+
+        hasReachedCastle = true;
+        attackTimer = 0f;
+
+        SetMoving(false);
     }
 
     void AttackCastle()
@@ -114,8 +144,22 @@ public class EnemyController : MonoBehaviour
 
         if (attackTimer >= interval)
         {
+            if (animator != null)
+            {
+                animator.SetTrigger("Attack");
+            }
+
             castle.TakeDamage(castleDamage);
+
             attackTimer = 0f;
+        }
+    }
+
+    void SetMoving(bool moving)
+    {
+        if (animator != null)
+        {
+            animator.SetBool("IsMoving", moving);
         }
     }
 
@@ -139,7 +183,13 @@ public class EnemyController : MonoBehaviour
 
         isDead = true;
 
-        // animator.SetTrigger("Die");
+        if (animator != null)
+        {
+            animator.SetBool("IsMoving", false);
+            animator.ResetTrigger("Attack");
+            animator.SetTrigger("Die");
+        }
+
         Destroy(gameObject, 2f);
     }
 }

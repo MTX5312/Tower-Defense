@@ -52,6 +52,9 @@ MonoBehaviour:
   moveSpeed: 0.08
   rotationSpeed: 10
   wayPoints: []
+  castle: {fileID: 0}
+  castleDamage: 10
+  castleAttackInterval: 1.5
 --- !u!136 &688665639573070015
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -162,6 +165,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: fd51d835be4959247b26883a50468722, type: 2}
+    - target: {fileID: 9500000, guid: e3942fec22e99384e9cee5aef64adec1, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 13700008, guid: e3942fec22e99384e9cee5aef64adec1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

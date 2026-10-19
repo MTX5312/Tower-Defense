@@ -74,13 +74,11 @@ public class EnemySpawner : MonoBehaviour
 
         newEnemy.transform.SetParent(transform, true);
 
-        EnemyController pathScript =
-            newEnemy.GetComponent<EnemyController>();
+        EnemyController pathScript = newEnemy.GetComponent<EnemyController>();
 
         if (pathScript != null)
         {
             pathScript.wayPoints = new List<Transform>(pathWaypoints);
-
             pathScript.castle = castleController;
         }
         else

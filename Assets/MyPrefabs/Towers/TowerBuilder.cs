@@ -12,8 +12,11 @@ public class TowerBuilder : MonoBehaviour
     public LayerMask capaTorres;
 
     [Header("Sistema de Cooldown")]
-    public float cooldownTime = 5f; // Tiempo de espera en segundos
+    public float cooldownTime = 5f;
     private float nextBuildTime = 0f;
+    public float CooldownDuration => Mathf.Max(0f, cooldownTime);
+    public float CooldownRemaining => Mathf.Max(0f, nextBuildTime - Time.time);
+    public bool IsOnCooldown => CooldownRemaining > 0;
 
     private ObserverBehaviour mObserverBehaviour;
 
