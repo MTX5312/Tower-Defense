@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="bosqueicon" size="0.047000 0.047000" />
+    <ImageTarget name="desiertoicon" size="0.047000 0.047000" />
+    <ImageTarget name="torrecanon" size="0.047000 0.047000" />
+    <ImageTarget name="torremago" size="0.047000 0.047000" />
+    <ImageTarget name="torrealta" size="0.047000 0.047000" />
+    <ImageTarget name="torrebaja" size="0.047000 0.047000" />
+  </Tracking>
+</QCARConfig>

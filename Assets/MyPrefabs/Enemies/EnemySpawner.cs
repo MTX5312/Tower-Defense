@@ -15,52 +15,83 @@ public class EnemySpawner : MonoBehaviour
     [Header("Castillo")]
     public CastleController castleController;
 
-    void Start()
-    {
-        if (castleController == null &&
-            pathWaypoints != null &&
-            pathWaypoints.Count > 0)
-        {
-            Transform finalWaypoint =
-                pathWaypoints[pathWaypoints.Count - 1];
+    private bool waveStarted = false;
+    private Coroutine spawnCoroutine;
 
-            if (finalWaypoint != null)
-            {
-                castleController =
-                    finalWaypoint.GetComponentInParent<CastleController>();
-            }
+    private void Awake()
+    {
+        BuscarCastillo();
+    }
+
+    private void BuscarCastillo()
+    {
+        if (castleController != null)
+            return;
+
+        if (pathWaypoints == null || pathWaypoints.Count == 0)
+            return;
+
+        Transform finalWaypoint =
+            pathWaypoints[pathWaypoints.Count - 1];
+
+        if (finalWaypoint != null)
+        {
+            castleController =
+                finalWaypoint.GetComponentInParent<CastleController>();
         }
+    }
+
+    public void StartFirstWave()
+    {
+        if (waveStarted)
+            return;
+
+        if (enemyPrefab == null)
+        {
+            Debug.LogError("EnemySpawner: falta asignar el prefab del enemigo.");
+            return;
+        }
+
+        if (pathWaypoints == null ||
+            pathWaypoints.Count == 0 ||
+            pathWaypoints[0] == null)
+        {
+            Debug.LogError("EnemySpawner: faltan los waypoints o el primer waypoint.");
+            return;
+        }
+
+        BuscarCastillo();
 
         if (castleController == null)
         {
-            Debug.LogWarning(
-                "No se encontró el CastleController. " +
-                "Asigná el castillo en el Inspector del Spawner."
-            );
+            Debug.LogWarning("No se encontró el CastleController. " + "Asigná el castillo en el Inspector del Spawner.");
         }
 
-        StartCoroutine(SpawnWave());
+        waveStarted = true;
+        spawnCoroutine = StartCoroutine(SpawnWave());
     }
 
-    IEnumerator SpawnWave()
+    private IEnumerator SpawnWave()
     {
         for (int i = 0; i < totalEnemies; i++)
         {
             SpawnEnemy();
 
-            yield return new WaitForSeconds(spawnInterval);
+            if (i < totalEnemies - 1)
+                yield return new WaitForSeconds(spawnInterval);
         }
+
+        spawnCoroutine = null;
     }
 
-    void SpawnEnemy()
+    private void SpawnEnemy()
     {
-        if (pathWaypoints == null ||
+        if (enemyPrefab == null ||
+            pathWaypoints == null ||
             pathWaypoints.Count == 0 ||
-            enemyPrefab == null)
+            pathWaypoints[0] == null)
         {
-            Debug.LogWarning(
-                "Faltan los Waypoints o el Prefab en el Spawner."
-            );
+            Debug.LogWarning("No se pudo generar el enemigo: " + "faltan el prefab o los waypoints.");
             return;
         }
 
@@ -74,17 +105,20 @@ public class EnemySpawner : MonoBehaviour
 
         newEnemy.transform.SetParent(transform, true);
 
-        EnemyController pathScript = newEnemy.GetComponent<EnemyController>();
+        EnemyController pathScript =
+            newEnemy.GetComponent<EnemyController>();
 
         if (pathScript != null)
         {
-            pathScript.wayPoints = new List<Transform>(pathWaypoints);
+            pathScript.wayPoints =
+                new List<Transform>(pathWaypoints);
+
             pathScript.castle = castleController;
         }
         else
         {
             Debug.LogWarning(
-                "El Prefab del enemigo no tiene EnemyController."
+                "El prefab del enemigo no tiene EnemyController."
             );
         }
     }
