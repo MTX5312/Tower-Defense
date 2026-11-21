@@ -10,11 +10,9 @@ public class WorldAnchor : MonoBehaviour
     [SerializeField] private Vector3 offsetPosicionLocal = Vector3.zero;
     [SerializeField] private Vector3 offsetRotacionLocal = Vector3.zero;
 
-    [Header("Comportamiento")]
-    [SerializeField] private bool desactivarImageTargetDespuesDeGenerar = true;
-
     private ObserverBehaviour imageTarget;
     private GameObject nivelInstanciado;
+    private AnchorBehaviour anclajeVuforia;
     private bool escenarioGenerado = false;
 
     private void Awake()
@@ -30,10 +28,6 @@ public class WorldAnchor : MonoBehaviour
         if (imageTarget != null)
         {
             imageTarget.OnTargetStatusChanged += OnTargetStatusChanged;
-        }
-        else
-        {
-            Debug.LogError("WorldAnchor necesita un ObserverBehaviour " + "en el mismo GameObject.");
         }
     }
 
@@ -66,9 +60,11 @@ public class WorldAnchor : MonoBehaviour
     {
         if (nivelPrefab == null)
         {
-            Debug.LogError(
-                "WorldAnchor: falta asignar el prefab NivelCompleto."
-            );
+            return;
+        }
+
+        if (VuforiaBehaviour.Instance == null)
+        {
             return;
         }
 
@@ -80,34 +76,52 @@ public class WorldAnchor : MonoBehaviour
             transform.rotation *
             Quaternion.Euler(offsetRotacionLocal);
 
-        nivelInstanciado = Instantiate(nivelPrefab, posicionInicial, rotacionInicial);
+        anclajeVuforia =
+            VuforiaBehaviour.Instance.ObserverFactory
+                .CreateAnchorBehaviour(
+                    "PocketSiege_NivelAnchor",
+                    posicionInicial,
+                    rotacionInicial
+                );
+
+        if (anclajeVuforia == null)
+        {
+            return;
+        }
+
+        nivelInstanciado = Instantiate(
+            nivelPrefab,
+            posicionInicial,
+            rotacionInicial
+        );
 
         if (nivelInstanciado == null)
         {
-            Debug.LogError("No se pudo generar el escenario.");
+            anclajeVuforia.UnconfigureAnchor();
+            anclajeVuforia = null;
+
             return;
         }
+
+        nivelInstanciado.transform.SetParent(anclajeVuforia.transform, true);
 
         escenarioGenerado = true;
 
         RefNivelPrefabs referencias = nivelInstanciado.GetComponent<RefNivelPrefabs>();
 
         Transform terrenoParaTorres = nivelInstanciado.transform;
-
         EnemySpawner spawner = null;
 
         if (referencias != null)
         {
-            if (referencias.terrenoPrincipal != null)
-                terrenoParaTorres = referencias.terrenoPrincipal;
+            if (referencias.terrenoPrincipal != null) terrenoParaTorres = referencias.terrenoPrincipal;
 
             spawner = referencias.enemySpawner;
         }
 
         if (spawner == null)
         {
-            spawner =
-                nivelInstanciado.GetComponentInChildren<EnemySpawner>(true);
+            spawner = nivelInstanciado.GetComponentInChildren<EnemySpawner>(true);
         }
 
         TowerBuilder[] constructores = FindObjectsByType<TowerBuilder>(FindObjectsSortMode.None);
@@ -117,23 +131,9 @@ public class WorldAnchor : MonoBehaviour
             constructor.terrenoPrincipal = terrenoParaTorres;
         }
 
-        Debug.Log("Escenario generado y referencias de torres configuradas.");
-
         if (spawner != null)
         {
             spawner.StartFirstWave();
-        }
-        else
-        {
-            Debug.LogError(
-                "El nivel fue generado, pero no se encontró EnemySpawner."
-            );
-        }
-
-        // El escenario ya está fuera de la jerarquía del ImageTarget.
-        if (desactivarImageTargetDespuesDeGenerar)
-        {
-            gameObject.SetActive(false);
         }
     }
 }

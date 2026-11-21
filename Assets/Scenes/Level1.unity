@@ -209,8 +209,8 @@ MonoBehaviour:
   m_Script: {fileID: -1826476478, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.VuforiaBehaviour
-  mWorldCenterMode: 2
-  mWorldCenter: {fileID: 0}
+  mWorldCenterMode: 0
+  mWorldCenter: {fileID: 477653656}
 --- !u!81 &307119770
 AudioListener:
   m_ObjectHideFlags: 0
@@ -278,13 +278,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307119766}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 1, z: 3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &307119773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6458794730314986448, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 163.34259
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6458794730314986448, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
       propertyPath: m_LocalPosition.y
@@ -328,7 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6458794730314986448, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -64.89304
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6458794730314986448, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
       propertyPath: m_LocalRotation.w
@@ -484,7 +484,6 @@ MonoBehaviour:
   nivelPrefab: {fileID: 5091560105552144948, guid: afae575697a73fd4090483162dbe889f, type: 3}
   offsetPosicionLocal: {x: 0, y: 0, z: 0}
   offsetRotacionLocal: {x: 0, y: 0, z: 0}
-  desactivarImageTargetDespuesDeGenerar: 1
 --- !u!114 &477653660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,7 +719,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4305038689935923091, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 163.34259
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4305038689935923091, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -728,7 +727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4305038689935923091, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -64.89304
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4305038689935923091, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
       propertyPath: m_LocalRotation.w
