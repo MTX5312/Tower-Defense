@@ -6,6 +6,7 @@ public class TowerBuilder : MonoBehaviour
     [Header("Construcción Base")]
     public GameObject torrePrefab;
     public Transform terrenoPrincipal;
+    public float alturaOffsetLocal = 0f;
 
     [Header("Detección de Colisión")]
     public float radioDeteccion = 0.2f;
@@ -29,6 +30,14 @@ public class TowerBuilder : MonoBehaviour
         }
     }
 
+    void OnDestroy()
+    {
+        if (mObserverBehaviour != null)
+        {
+            mObserverBehaviour.OnTargetStatusChanged -= OnTargetStatusChanged;
+        }
+    }
+
     private void OnTargetStatusChanged(ObserverBehaviour behaviour, TargetStatus targetStatus)
     {
         if (targetStatus.Status == Status.TRACKED || targetStatus.Status == Status.EXTENDED_TRACKED)
@@ -39,26 +48,44 @@ public class TowerBuilder : MonoBehaviour
 
     void IntentarColocarTorre()
     {
+        if (terrenoPrincipal == null)
+        {
+            Debug.LogWarning("TowerBuilder: terrenoPrincipal aún no está asignado. Escaneá primero IT_Terreno.");
+            return;
+        }
+
         if (Time.time < nextBuildTime)
         {
             float tiempoRestante = nextBuildTime - Time.time;
             Debug.Log($"Tarjeta en recarga. Espera {tiempoRestante:F1} segundos.");
             return;
         }
-        Collider[] objetosEncontrados = Physics.OverlapSphere(transform.position, radioDeteccion, capaTorres);
+
+        Vector3 posicionLocalEnTerreno = terrenoPrincipal.InverseTransformPoint(transform.position);
+        posicionLocalEnTerreno.y += alturaOffsetLocal;
+        Vector3 posicionMundoCalculada = terrenoPrincipal.TransformPoint(posicionLocalEnTerreno);
+
+        Collider[] objetosEncontrados = Physics.OverlapSphere(posicionMundoCalculada, radioDeteccion, capaTorres);
 
         if (objetosEncontrados.Length > 0)
         {
             Debug.LogWarning("¡Ubicación ocupada!");
             return;
         }
-        ColocarTorre();
+
+        ColocarTorre(posicionLocalEnTerreno);
     }
 
-    void ColocarTorre()
+    void ColocarTorre(Vector3 posicionLocalEnTerreno)
     {
-        GameObject nuevaTorre = Instantiate(torrePrefab, transform.position, transform.rotation);
-        nuevaTorre.transform.SetParent(terrenoPrincipal, true);
+        if (torrePrefab == null || terrenoPrincipal == null)
+            return;
+
+        GameObject nuevaTorre = Instantiate(torrePrefab, terrenoPrincipal);
+        nuevaTorre.transform.localPosition = posicionLocalEnTerreno;
+
+        Quaternion rotacionLocalRelativa = Quaternion.Inverse(terrenoPrincipal.rotation) * transform.rotation;
+        nuevaTorre.transform.localRotation = Quaternion.Euler(0f, rotacionLocalRelativa.eulerAngles.y, 0f);
 
         nextBuildTime = Time.time + cooldownTime;
     }
@@ -66,6 +93,9 @@ public class TowerBuilder : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, radioDeteccion);
+        Vector3 centro = terrenoPrincipal != null
+            ? terrenoPrincipal.TransformPoint(terrenoPrincipal.InverseTransformPoint(transform.position) + Vector3.up * alturaOffsetLocal)
+            : transform.position;
+        Gizmos.DrawWireSphere(centro, radioDeteccion);
     }
 }
