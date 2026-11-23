@@ -48,12 +48,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   animator: {fileID: 5447392698411376236}
-  maxHealth: 100
-  moveSpeed: 0.08
+  maxHealth: 75
+  moveSpeed: 0.12
   rotationSpeed: 10
   wayPoints: []
   castle: {fileID: 0}
-  castleDamage: 10
+  castleDamage: 8
   castleAttackInterval: 1.5
 --- !u!136 &688665639573070015
 CapsuleCollider:

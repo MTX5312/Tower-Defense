@@ -8,10 +8,29 @@ public class CastleController : MonoBehaviour
     private float currentHealth;
     public bool IsDestroyed { get; private set; }
 
+    [Header("Estados")]
+    public GameObject intacto;
+    public GameObject destruido;
+
     void Awake()
     {
         currentHealth = maxHealth;
         IsDestroyed = false;
+
+        ConfigurarEstadoInicial();
+    }
+
+    private void ConfigurarEstadoInicial()
+    {
+        if (intacto != null)
+        {
+            intacto.SetActive(true);
+        }
+
+        if (destruido != null)
+        {
+            destruido.SetActive(false);
+        }
     }
 
     public void TakeDamage(float damageAmount)
@@ -36,7 +55,20 @@ public class CastleController : MonoBehaviour
 
     void DestroyCastle()
     {
+        if (IsDestroyed)
+            return;
+
         IsDestroyed = true;
+
+        if (intacto != null)
+        {
+            intacto.SetActive(false);
+        }
+
+        if (destruido != null)
+        {
+            destruido.SetActive(true);
+        }
 
         Debug.Log("¡El castillo ha sido destruido! Fin de la partida.");
     }

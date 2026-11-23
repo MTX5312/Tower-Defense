@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2095036899424641065}
+  - component: {fileID: 1580351879317162803}
   - component: {fileID: 5714136906977212793}
   m_Layer: 0
   m_Name: Hammer
@@ -33,6 +34,26 @@ Transform:
   - {fileID: 4028512572151884689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580351879317162803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8645035228520322308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b0fb9d813fa724cbfbe5cd7e6f585c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+  animator: {fileID: 0}
+  maxHealth: 220
+  moveSpeed: 0.06
+  rotationSpeed: 10
+  wayPoints: []
+  castle: {fileID: 0}
+  castleDamage: 30
+  castleAttackInterval: 2.5
 --- !u!136 &5714136906977212793
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -112,6 +133,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: c04a63d584e38cb49a59057edbeb4e2c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: fd51d835be4959247b26883a50468722, type: 2}
     - target: {fileID: 13700012, guid: c04a63d584e38cb49a59057edbeb4e2c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
