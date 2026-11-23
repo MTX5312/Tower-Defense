@@ -208,9 +208,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75693a35e7daa2d459b1befd321b44c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  enemyPrefab: {fileID: 7186169987932396255, guid: de86ceba82716ad448a9876432410dfd, type: 3}
-  spawnInterval: 3
-  totalEnemies: 10
+  waves:
+  - waveName: Basica
+    defaultSpawnInterval: 3
+    timeAfterWave: 20
+    entries:
+    - label: Sword
+      enemyPrefab: {fileID: 1926248478535535505, guid: a0b11818ce5486041a77e8f1c8ba958a, type: 3}
+      count: 10
+      customSpawnInterval: 0
+  - waveName: Rapidos
+    defaultSpawnInterval: 0.05
+    timeAfterWave: 20
+    entries:
+    - label: Sword
+      enemyPrefab: {fileID: 7186169987932396255, guid: de86ceba82716ad448a9876432410dfd, type: 3}
+      count: 5
+      customSpawnInterval: 2
+    - label: Spear
+      enemyPrefab: {fileID: 1926248478535535505, guid: a0b11818ce5486041a77e8f1c8ba958a, type: 3}
+      count: 8
+      customSpawnInterval: 3
+  - waveName: Pesada
+    defaultSpawnInterval: 2
+    timeAfterWave: 0
+    entries:
+    - label: Sword
+      enemyPrefab: {fileID: 7186169987932396255, guid: de86ceba82716ad448a9876432410dfd, type: 3}
+      count: 6
+      customSpawnInterval: 2
+    - label: Spear
+      enemyPrefab: {fileID: 1926248478535535505, guid: a0b11818ce5486041a77e8f1c8ba958a, type: 3}
+      count: 10
+      customSpawnInterval: 3
+    - label: Hammer
+      enemyPrefab: {fileID: 8645035228520322308, guid: cc23064d23c36c44c9a015d47a80fc19, type: 3}
+      count: 3
+      customSpawnInterval: 4
   pathWaypoints:
   - {fileID: 262478256083615978}
   - {fileID: 4283947805549855680}
@@ -222,6 +256,7 @@ MonoBehaviour:
   - {fileID: 2115070938162673037}
   - {fileID: 2798355064130884624}
   castleController: {fileID: 3780037371221739246}
+  iniciarSinEsperarTerreno: 0
 --- !u!1 &5091560105552144948
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,15 +698,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6845962941564930216, guid: bf35d83926e00244db902419e78c12e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.765
+      value: -1.317
       objectReference: {fileID: 0}
     - target: {fileID: 6845962941564930216, guid: bf35d83926e00244db902419e78c12e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.118
+      value: -0.004
       objectReference: {fileID: 0}
     - target: {fileID: 6845962941564930216, guid: bf35d83926e00244db902419e78c12e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.852
+      value: -2.088
       objectReference: {fileID: 0}
     - target: {fileID: 6845962941564930216, guid: bf35d83926e00244db902419e78c12e4, type: 3}
       propertyPath: m_LocalRotation.w

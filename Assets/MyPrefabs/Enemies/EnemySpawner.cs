@@ -6,16 +6,16 @@ using UnityEngine;
 [Serializable]
 public class EnemySpawnEntry
 {
-    [Tooltip("Nombre")]
+    [Tooltip("Nombre descriptivo opcional para leer mejor en el Inspector")]
     public string label;
 
-    [Tooltip("Enemigo")]
+    [Tooltip("Prefab del enemigo (debe tener EnemyController)")]
     public GameObject enemyPrefab;
 
     [Min(1)]
     public int count = 5;
 
-    [Tooltip("Si es menor o igual a 0, usa el intervalo por defecto")]
+    [Tooltip("Si es menor o igual a 0, usa el intervalo por defecto de la oleada")]
     [Min(0f)]
     public float customSpawnInterval = 0f;
 }
@@ -23,13 +23,13 @@ public class EnemySpawnEntry
 [Serializable]
 public class WaveDefinition
 {
-    [Tooltip("Nombre de oleada")]
+    [Tooltip("Nombre opcional de la oleada, ej: Oleada 1")]
     public string waveName = "Wave";
 
     [Min(0.05f)]
     public float defaultSpawnInterval = 1.5f;
 
-    [Tooltip("Tiempo para siguiente oleada")]
+    [Tooltip("Tiempo de espera al terminar esta oleada antes de pasar a la siguiente")]
     [Min(0f)]
     public float timeAfterWave = 3f;
 
@@ -41,14 +41,21 @@ public class EnemySpawner : MonoBehaviour
     [Header("Configuración de Oleadas")]
     public List<WaveDefinition> waves = new List<WaveDefinition>();
 
+    [Header("Condición de Fin de Oleada")]
+    public bool esperarAQueMueranEnemigos = true;
+
     [Header("Ruta del Camino")]
     public List<Transform> pathWaypoints = new List<Transform>();
 
     [Header("Castillo")]
     public CastleController castleController;
 
+    [Header("Pruebas de Oleadas")]
+    [SerializeField] private bool iniciarSinEsperarTerreno = false;
+
     private bool waveStarted = false;
     private Coroutine wavesCoroutine;
+    private readonly List<EnemyController> enemigosGenerados = new List<EnemyController>();
 
     public int CurrentWaveIndex { get; private set; } = -1;
     public bool AllWavesFinished { get; private set; } = false;
@@ -56,6 +63,14 @@ public class EnemySpawner : MonoBehaviour
     private void Awake()
     {
         BuscarCastillo();
+    }
+
+    private void Start()
+    {
+        if (iniciarSinEsperarTerreno)
+        {
+            StartFirstWave();
+        }
     }
 
     private void BuscarCastillo()
@@ -130,15 +145,22 @@ public class EnemySpawner : MonoBehaviour
                 {
                     SpawnEnemy(entry.enemyPrefab);
 
-                    bool isLastOverall =
-                        (w == waves.Count - 1) &&
+                    bool isLastInWave =
                         (e == currentWave.entries.Count - 1) &&
                         (i == entry.count - 1);
 
-                    if (!isLastOverall)
+                    if (!isLastInWave)
                     {
                         yield return new WaitForSeconds(interval);
                     }
+                }
+            }
+
+            if (esperarAQueMueranEnemigos)
+            {
+                while (HayEnemigosVivos())
+                {
+                    yield return new WaitForSeconds(0.25f);
                 }
             }
 
@@ -150,7 +172,21 @@ public class EnemySpawner : MonoBehaviour
 
         AllWavesFinished = true;
         wavesCoroutine = null;
-        Debug.Log("EnemySpawner: todas las oleadas configuradas han terminado de generarse.");
+        Debug.Log("EnemySpawner: todas las oleadas configuradas han terminado de generarse y completarse.");
+    }
+
+    private bool HayEnemigosVivos()
+    {
+        for (int i = enemigosGenerados.Count - 1; i >= 0; i--)
+        {
+            EnemyController enemy = enemigosGenerados[i];
+            if (enemy == null || enemy.IsDead)
+            {
+                enemigosGenerados.RemoveAt(i);
+            }
+        }
+
+        return enemigosGenerados.Count > 0;
     }
 
     private void SpawnEnemy(GameObject enemyPrefabToSpawn)
@@ -180,6 +216,7 @@ public class EnemySpawner : MonoBehaviour
         {
             pathScript.wayPoints = new List<Transform>(pathWaypoints);
             pathScript.castle = castleController;
+            enemigosGenerados.Add(pathScript);
         }
         else
         {
