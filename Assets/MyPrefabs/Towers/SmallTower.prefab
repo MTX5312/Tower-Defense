@@ -272,9 +272,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerController
   range: 0.65
-  fireRate: 1
+  fireRate: 1.8
   enemyTag: Enemy
-  projectilePrefab: {fileID: 5981917599448000752, guid: 167a93fe02bacd54e85b85b08eef617e, type: 3}
+  projectilePrefab: {fileID: 5981917599448000752, guid: bb279bc2c07dd614c94b8f8f966f2b48, type: 3}
   firePoint: {fileID: 1484589821223581989}
 --- !u!4 &4730334926542484726 stripped
 Transform:
