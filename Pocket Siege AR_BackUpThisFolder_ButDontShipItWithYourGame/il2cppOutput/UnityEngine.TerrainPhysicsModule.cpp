@@ -250,7 +250,7 @@ inline GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* UnsafeUtilityInternal
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 104313
+// Method Definition Index: 104316
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmbeddedAttribute__ctor_m0EEF84936FC4A2F39F0DB41D607DB8C52E217720 (EmbeddedAttribute_t10AC2F79D47F3DC231D311EB9AAB3B02FE540E72* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -267,7 +267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmbeddedAttribute__ctor_m0EEF84936FC4A2F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 104314
+// Method Definition Index: 104317
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RefSafetyRulesAttribute__ctor_m80C39D73F251C8BD5F31B40E0B3FEE70CC4EE92F (RefSafetyRulesAttribute_t6479F3EB0623E72FB71EFAEF70C72D4566546731* __this, int32_t ___0_p, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -286,7 +286,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RefSafetyRulesAttribute__ctor_m80C39D73F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 104315
+// Method Definition Index: 104318
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TerrainData_t615A68EAC648066681875D47FC641496D12F2E24* TerrainCollider_get_terrainData_m4B39540CB704719FA710B1D3837D9D1CD39AC07A (TerrainCollider_tBCAC2FC868B0E00ACB88A0E8FEDDE44DABE6DA05* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -325,7 +325,7 @@ IL_000f:
 		return L_3;
 	}
 }
-// Method Definition Index: 104316
+// Method Definition Index: 104319
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t TerrainCollider_get_terrainData_Injected_mD0C2991615998A29FC3A91863C21F08CC97C9929 (intptr_t ___0__unity_self, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -495,7 +495,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GCHandle_tC44F6F72EE68BD4CFABA243
 		return L_1;
 	}
 }
-// Method Definition Index: 103071
+// Method Definition Index: 103074
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppFullySharedGenericAny* UnsafeUtilityInternal_As_TisIl2CppFullySharedGenericAny_TisIl2CppFullySharedGenericAny_mE1CA751887466B801BE69083C2B0EA3EDE41FF9B_fshared_inline (Il2CppFullySharedGenericAny* ___0_from, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>

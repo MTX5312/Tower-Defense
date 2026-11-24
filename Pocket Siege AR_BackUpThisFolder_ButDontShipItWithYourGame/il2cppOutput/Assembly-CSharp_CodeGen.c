@@ -252,6 +252,9 @@ extern void U3CRunAllWavesU3Ed__20_MoveNext_m084856F913A05B54CBFD9D4F80EB2A9E2A2
 extern void U3CRunAllWavesU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5ACE09CFAF043D5A3579D189FC3E137586F47D84 (void);
 extern void U3CRunAllWavesU3Ed__20_System_Collections_IEnumerator_Reset_m102796A4E9ED5AA012D131D0495F208A25BB9C2D (void);
 extern void U3CRunAllWavesU3Ed__20_System_Collections_IEnumerator_get_Current_m0DD5AF36D4EA215EB8ADCE1017039C985FD9F883 (void);
+extern void MainMenu_StartGame_m8FB75C50790940C87A983517C4C08F4159A8A7D0 (void);
+extern void MainMenu_QuitGame_mBF761274C14BD7341FE8C32A538D28343B63EDC4 (void);
+extern void MainMenu__ctor_m8209CEC1D907C87A96D777961F4D0536E6E948DD (void);
 extern void ReturnToMenu_VolverAlMenu_m30FCD15A8A3F2C3DDE732B67CC0696B679307841 (void);
 extern void ReturnToMenu__ctor_mAE38D6A2DAD60BF8CC17801535BEBD1DA6C33B56 (void);
 extern void SafeAreaFitter_Awake_m62887BFB5463D892F0AED173D326493D6BECA730 (void);
@@ -736,7 +739,7 @@ extern void SimpleGemsAnim_Start_mE3E35DFC65DBD295C65664CAA40DC239B1B051BA (void
 extern void SimpleGemsAnim_Update_m65A5F3798DD285B25501AA98DBF99464736C5EDF (void);
 extern void SimpleGemsAnim_EaseInOutQuad_m147998879DBAC5A60C32C43BAD93D7D17E2D0C6C (void);
 extern void SimpleGemsAnim__ctor_m3AEC9F12E8B8F5E1A8CD5761EC016F756C3A5B9D (void);
-static Il2CppMethodPointer s_methodPointers[731] = 
+static Il2CppMethodPointer s_methodPointers[734] = 
 {
 	CameraController_Start_m8EAAC188934ECCBD009EC00751280DCFF4D96C71,
 	CameraController_Update_mBCB871B23DBA60444D43AB56D780478BA3D355E6,
@@ -985,6 +988,9 @@ static Il2CppMethodPointer s_methodPointers[731] =
 	U3CRunAllWavesU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5ACE09CFAF043D5A3579D189FC3E137586F47D84,
 	U3CRunAllWavesU3Ed__20_System_Collections_IEnumerator_Reset_m102796A4E9ED5AA012D131D0495F208A25BB9C2D,
 	U3CRunAllWavesU3Ed__20_System_Collections_IEnumerator_get_Current_m0DD5AF36D4EA215EB8ADCE1017039C985FD9F883,
+	MainMenu_StartGame_m8FB75C50790940C87A983517C4C08F4159A8A7D0,
+	MainMenu_QuitGame_mBF761274C14BD7341FE8C32A538D28343B63EDC4,
+	MainMenu__ctor_m8209CEC1D907C87A96D777961F4D0536E6E948DD,
 	ReturnToMenu_VolverAlMenu_m30FCD15A8A3F2C3DDE732B67CC0696B679307841,
 	ReturnToMenu__ctor_mAE38D6A2DAD60BF8CC17801535BEBD1DA6C33B56,
 	SafeAreaFitter_Awake_m62887BFB5463D892F0AED173D326493D6BECA730,
@@ -1474,7 +1480,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	731,
+	734,
 	s_methodPointers,
 	0,
 	NULL,
