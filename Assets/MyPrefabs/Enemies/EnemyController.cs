@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour
     public float maxHealth = 100f;
     private float currentHealth;
     private bool isDead = false;
+    public bool IsDead => isDead;
 
     [Header("Movimiento")]
     public float moveSpeed = 0.1f;

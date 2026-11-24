@@ -14,11 +14,6 @@ static Il2CppMethodPointer s_methodPointers[2] =
 	ObjectUtilsBridge_MarkDirty_m806D9A6DB8982C962721D9E4B974BBC23B38B5EE,
 	TMPHelpURL__ctor_m7C42784B8848234D4344E83F18520D6523857D6C,
 };
-static const int32_t s_InvokerIndices[2] = 
-{
-	20162,
-	10164,
-};
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_InternalAPIEngineBridge_004_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_InternalAPIEngineBridge_004_CodeGenModule = 
 {
@@ -27,13 +22,7 @@ const Il2CppCodeGenModule g_Unity_InternalAPIEngineBridge_004_CodeGenModule =
 	s_methodPointers,
 	0,
 	NULL,
-	s_InvokerIndices,
 	0,
-	NULL,
-	0,
-	NULL,
-	0,
-	NULL,
 	NULL,
 	NULL,
 	NULL,

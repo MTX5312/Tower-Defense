@@ -172,6 +172,23 @@
         ]
       },
       {
+        "name": "Burst",
+        "dependencies": [
+          {
+            "name": "Required by Core Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.core"
+          },
+          {
+            "name": "Required by ManagedKernel Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.managedkernel"
+          }
+        ]
+      },
+      {
         "name": "ContentLoad",
         "dependencies": [
           {
@@ -658,6 +675,12 @@
             "icon": "package/com.unity.modules.identifiers"
           },
           {
+            "name": "Required by ImageConversion Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.imageconversion"
+          },
+          {
             "name": "Required by Input Module",
             "scenes": [],
             "dependencyType": 2,
@@ -752,6 +775,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.terrainphysics"
+          },
+          {
+            "name": "Required by Tetgen Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tetgen"
           },
           {
             "name": "Required by TextCoreFontEngine Module",
@@ -912,6 +941,10 @@
         ]
       },
       {
+        "name": "ImageConversion",
+        "dependencies": []
+      },
+      {
         "name": "Input",
         "dependencies": [
           {
@@ -1051,6 +1084,17 @@
         ]
       },
       {
+        "name": "ManagedKernel",
+        "dependencies": [
+          {
+            "name": "Required by Core Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.core"
+          }
+        ]
+      },
+      {
         "name": "Mathematics",
         "dependencies": [
           {
@@ -1066,10 +1110,22 @@
             "icon": "package/com.unity.modules.core"
           },
           {
+            "name": "Required by ManagedKernel Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.managedkernel"
+          },
+          {
             "name": "Required by ParticleSystem Module",
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.particlesystem"
+          },
+          {
+            "name": "Required by U2DRuntime Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.u2druntime"
           },
           {
             "name": "Required by UIElements Module",
@@ -1157,7 +1213,9 @@
           },
           {
             "name": "SphereCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Level1.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1300,261 +1358,10 @@
             "icon": "package/com.unity.modules.audio"
           },
           {
-            "name": "Required by ContentLoad Module",
+            "name": "Required by Burst Module",
             "scenes": [],
             "dependencyType": 2,
-            "icon": "package/com.unity.modules.contentload"
-          },
-          {
-            "name": "Required by Core Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.core"
-          },
-          {
-            "name": "Required by CrashReporting Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.crashreporting"
-          },
-          {
-            "name": "Required by GraphicsStateCollectionSerializer Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.graphicsstatecollectionserializer"
-          },
-          {
-            "name": "Required by HierarchyCore Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.hierarchycore"
-          },
-          {
-            "name": "Required by HotReload Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.hotreload"
-          },
-          {
-            "name": "Required by IMGUI Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.imgui"
-          },
-          {
-            "name": "Required by Identifiers Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.identifiers"
-          },
-          {
-            "name": "Required by Input Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.input"
-          },
-          {
-            "name": "Required by InputForUI Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.inputforui"
-          },
-          {
-            "name": "Required by InputLegacy Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.inputlegacy"
-          },
-          {
-            "name": "Required by Insights Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.insights"
-          },
-          {
-            "name": "Required by JSONSerialize Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.jsonserialize"
-          },
-          {
-            "name": "Required by Mathematics Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.mathematics"
-          },
-          {
-            "name": "Required by ParticleSystem Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.particlesystem"
-          },
-          {
-            "name": "Required by Physics2D Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.physics2d"
-          },
-          {
-            "name": "Required by PhysicsBackendPhysX Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.physicsbackendphysx"
-          },
-          {
-            "name": "Required by PhysicsCore2D Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.physicscore2d"
-          },
-          {
-            "name": "Required by Properties Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.properties"
-          },
-          {
-            "name": "Required by RuntimeInitializeOnLoadManagerInitializer Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
-          },
-          {
-            "name": "Required by Subsystems Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.subsystems"
-          },
-          {
-            "name": "Required by TLS Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.tls"
-          },
-          {
-            "name": "Required by Terrain Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.terrain"
-          },
-          {
-            "name": "Required by TerrainPhysics Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.terrainphysics"
-          },
-          {
-            "name": "Required by TextCoreFontEngine Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.textcorefontengine"
-          },
-          {
-            "name": "Required by TextCoreTextEngine Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.textcoretextengine"
-          },
-          {
-            "name": "Required by TextRendering Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.textrendering"
-          },
-          {
-            "name": "Required by U2DRuntime Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.u2druntime"
-          },
-          {
-            "name": "Required by UI Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.ui"
-          },
-          {
-            "name": "Required by UIElements Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.uielements"
-          },
-          {
-            "name": "Required by UnityAnalytics Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.unityanalytics"
-          },
-          {
-            "name": "Required by UnityAnalyticsCommon Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.unityanalyticscommon"
-          },
-          {
-            "name": "Required by UnityConnect Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.unityconnect"
-          },
-          {
-            "name": "Required by UnityConsent Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.unityconsent"
-          },
-          {
-            "name": "Required by UnityWebRequest Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.unitywebrequest"
-          },
-          {
-            "name": "Required by VFX Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.vfx"
-          },
-          {
-            "name": "Required by XR Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.xr"
-          }
-        ]
-      },
-      {
-        "name": "SharedInternals",
-        "dependencies": [
-          {
-            "name": "Required by AI Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.ai"
-          },
-          {
-            "name": "Required by AndroidJNI Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.androidjni"
-          },
-          {
-            "name": "Required by Animation Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.animation"
-          },
-          {
-            "name": "Required by AssetBundle Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.assetbundle"
-          },
-          {
-            "name": "Required by Audio Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.audio"
+            "icon": "package/com.unity.modules.burst"
           },
           {
             "name": "Required by ContentLoad Module",
@@ -1605,6 +1412,12 @@
             "icon": "package/com.unity.modules.identifiers"
           },
           {
+            "name": "Required by ImageConversion Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.imageconversion"
+          },
+          {
             "name": "Required by Input Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1633,6 +1446,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
+          },
+          {
+            "name": "Required by ManagedKernel Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.managedkernel"
           },
           {
             "name": "Required by Mathematics Module",
@@ -1683,12 +1502,6 @@
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
           },
           {
-            "name": "Required by Scripting Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.scripting"
-          },
-          {
             "name": "Required by Subsystems Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1711,6 +1524,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.terrainphysics"
+          },
+          {
+            "name": "Required by Tetgen Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tetgen"
           },
           {
             "name": "Required by TextCoreFontEngine Module",
@@ -1881,6 +1700,10 @@
         ]
       },
       {
+        "name": "Tetgen",
+        "dependencies": []
+      },
+      {
         "name": "TextCoreFontEngine",
         "dependencies": [
           {
@@ -2020,6 +1843,12 @@
           },
           {
             "name": "UIAnimationBinder",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "UIAnimationClip",
             "scenes": [],
             "dependencyType": 0,
             "icon": null
