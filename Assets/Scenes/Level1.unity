@@ -280,25 +280,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 138547394}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &138547402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138547391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 138547394}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: TorreBallista
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 138547394}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &307119766
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.VuforiaBehaviour
   mWorldCenterMode: 0
-  mWorldCenter: {fileID: 477653656}
+  mWorldCenter: {fileID: 0}
 --- !u!81 &307119770
 AudioListener:
   m_ObjectHideFlags: 0
@@ -550,150 +531,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1357834644547649954, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
       insertIndex: -1
       addedObject: {fileID: 737624539}
-    - targetCorrespondingSourceObject: {fileID: 1357834644547649954, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 737624543}
   m_SourcePrefab: {fileID: 100100000, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
---- !u!1 &477653653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 477653657}
-  - component: {fileID: 477653656}
-  - component: {fileID: 477653655}
-  - component: {fileID: 477653659}
-  - component: {fileID: 477653660}
-  m_Layer: 0
-  m_Name: IT_Terreno
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &477653655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477653653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: VuforiaScripts::DefaultObserverEventHandler
-  StatusFilter: 1
-  UsePoseSmoothing: 0
-  AnimationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 3.3333333
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.3
-      value: 1
-      inSlope: 3.3333333
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  OnTargetFound:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTargetLost:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &477653656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477653653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetBehaviour
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: DesiertoIcon
-  mInitializedInEditor: 1
-  mDataSetPath: 
-  mAspectRatio: 1
-  mImageTargetType: 3
-  mWidth: 0.2
-  mHeight: 0.2
-  mRuntimeTexture: {fileID: 2800000, guid: d13ccf0984a68044ba557e884ebc91e3, type: 3}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 477653660}
---- !u!4 &477653657
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477653653}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &477653659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477653653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9267edccedb8864a902245b5bd6d92a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TerrainAnchorController
-  nivelPrefab: {fileID: 5091560105552144948, guid: afae575697a73fd4090483162dbe889f, type: 3}
-  offsetPosicionLocal: {x: 0, y: 0, z: 0}
-  offsetRotacionLocal: {x: 0, y: 0, z: 0}
---- !u!114 &477653660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477653653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 477653656}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: DesiertoIcon
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 477653656}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &581937226
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,25 +646,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 737624535}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &737624543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737624532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 737624535}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: TorreAlta
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 737624535}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &866675709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
@@ -862,25 +681,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 866675712}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &866675720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866675709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 866675712}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: TorreBaja
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 866675712}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &875945471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
@@ -898,25 +698,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetBehaviour
 --- !u!114 &875945478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875945471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 875945474}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: "TorreCa\xF1on"
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 875945474}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &875945482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1076,7 +857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1084,7 +865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1136,25 +917,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetBehaviour
 --- !u!114 &1005035945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005035938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1005035941}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: TorreMago
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1005035941}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1005035949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1245,9 +1007,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 866675716}
-    - targetCorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 866675720}
   m_SourcePrefab: {fileID: 100100000, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
 --- !u!1001 &1752923060
 PrefabInstance:
@@ -1703,9 +1462,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7021746372886520724, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 138547398}
-    - targetCorrespondingSourceObject: {fileID: 7021746372886520724, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 138547402}
   m_SourcePrefab: {fileID: 100100000, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
 --- !u!1001 &3630560853398959475
 PrefabInstance:
@@ -1899,9 +1655,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1005035945}
-    - targetCorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1005035949}
   m_SourcePrefab: {fileID: 100100000, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
 --- !u!1001 &7756918303599016346
 PrefabInstance:
@@ -1983,9 +1736,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 875945478}
-    - targetCorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 875945482}
   m_SourcePrefab: {fileID: 100100000, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -1999,5 +1749,4 @@ SceneRoots:
   - {fileID: 5628103252670363236}
   - {fileID: 7756918303599016346}
   - {fileID: 824529883602252243}
-  - {fileID: 477653657}
   - {fileID: 989832220}

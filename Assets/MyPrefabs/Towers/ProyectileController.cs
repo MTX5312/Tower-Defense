@@ -12,6 +12,9 @@ public class ProjectileController : MonoBehaviour
     [Tooltip("Distancia mínima para impacto")]
     public float hitDistanceThreshold = 0.05f;
 
+    [Tooltip("Altura extra sobre la base del objetivo")]
+    public float targetHeightOffset = 0.025f;
+
     [Header("Tipo de Proyectil")]
     public bool isPiercing = false;
 
@@ -48,7 +51,7 @@ public class ProjectileController : MonoBehaviour
         {
             if (objective != null && !impactado)
             {
-                Vector3 targetPos = objective.position + new Vector3(0f, 0.15f, 0f);
+                Vector3 targetPos = objective.position + new Vector3(0f, targetHeightOffset, 0f);
                 Vector3 dir = (targetPos - transform.position).normalized;
                 if (dir != Vector3.zero)
                 {
@@ -77,7 +80,7 @@ public class ProjectileController : MonoBehaviour
 
     void DirectMovementLogic()
     {
-        Vector3 targetPosition = objective.position + new Vector3(0f, 0.15f, 0f);
+        Vector3 targetPosition = objective.position + new Vector3(0f, targetHeightOffset, 0f);
 
         transform.position = Vector3.MoveTowards(
             transform.position,

@@ -116,9 +116,9 @@ Transform:
   m_GameObject: {fileID: 1186642710712362881}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.294, y: 0, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4271013118648319850}
   - {fileID: 6787741684275024960}
@@ -185,6 +185,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3886776164837892382}
     m_Modifications:
+    - target: {fileID: 1494556196534140895, guid: 0dd67ae9f4305f84f97dd0da5cb856ce, type: 3}
+      propertyPath: range
+      value: 0.39
+      objectReference: {fileID: 0}
     - target: {fileID: 2291388368196345921, guid: 0dd67ae9f4305f84f97dd0da5cb856ce, type: 3}
       propertyPath: m_Name
       value: FullCannon

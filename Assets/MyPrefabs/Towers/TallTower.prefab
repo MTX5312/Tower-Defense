@@ -116,9 +116,9 @@ Transform:
   m_GameObject: {fileID: 1186642710712362881}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.294, y: 0, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4271013118648319850}
   - {fileID: 6787741684275024960}
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412e8ecd4f218b4468378b580de16a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerController
-  range: 1
+  range: 0.5
   fireRate: 0.75
   enemyTag: Enemy
   projectilePrefab: {fileID: 5981917599448000752, guid: 167a93fe02bacd54e85b85b08eef617e, type: 3}

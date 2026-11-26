@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileController
   speed: 2
   damage: 45
-  lifeTime: 1.5
+  lifeTime: 2
   hitDistanceThreshold: 0.05
   isPiercing: 0
   isExplosive: 0
