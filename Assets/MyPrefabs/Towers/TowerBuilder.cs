@@ -1,25 +1,37 @@
 using UnityEngine;
+using UnityEngine.UI;
 using Vuforia;
 
 public class TowerBuilder : MonoBehaviour
 {
     [Header("Construcción Base")]
     public GameObject torrePrefab;
-    public Transform terrenoPrincipal;
+
+    [Tooltip("Opcional: si se deja vacío, la torre se crea como hija de este mismo ImageTarget")]
+    public Transform padreTorre;
+
     public float alturaOffsetLocal = 0f;
 
     [Header("Detección de Colisión")]
-    public float radioDeteccion = 0.2f;
+    public float radioDeteccion = 0.05f;
     public LayerMask capaTorres;
 
-    [Header("Sistema de Cooldown")]
-    public float cooldownTime = 5f;
-    private float nextBuildTime = 0f;
-    public float CooldownDuration => Mathf.Max(0f, cooldownTime);
-    public float CooldownRemaining => Mathf.Max(0f, nextBuildTime - Time.time);
-    public bool IsOnCooldown => CooldownRemaining > 0;
+    [Header("UI de Bloqueo Permanente")]
+    [Tooltip("Imagen UI que cubre toda la tarjeta/botón y queda oscura al construir")]
+    public UnityEngine.UI.Image overlayOscuroCompleto;
+
+    [Range(0f, 1f)]
+    public float opacidadOscura = 0.78f;
 
     private ObserverBehaviour mObserverBehaviour;
+    private bool torreConstruida = false;
+
+    public bool TorreConstruida => torreConstruida;
+
+    void Awake()
+    {
+        SetOverlayOscuro(false);
+    }
 
     void Start()
     {
@@ -40,62 +52,75 @@ public class TowerBuilder : MonoBehaviour
 
     private void OnTargetStatusChanged(ObserverBehaviour behaviour, TargetStatus targetStatus)
     {
+        if (torreConstruida)
+            return;
+
         if (targetStatus.Status == Status.TRACKED || targetStatus.Status == Status.EXTENDED_TRACKED)
         {
             IntentarColocarTorre();
         }
     }
 
-    void IntentarColocarTorre()
+    public void IntentarColocarTorre()
     {
-        if (terrenoPrincipal == null)
-        {
-            Debug.LogWarning("TowerBuilder: terrenoPrincipal aún no está asignado. Escaneá primero IT_Terreno.");
+        if (torreConstruida || torrePrefab == null)
             return;
+
+        Vector3 posicionSpawn = transform.position + transform.up * alturaOffsetLocal;
+
+        if (capaTorres.value != 0)
+        {
+            Collider[] objetosEncontrados = Physics.OverlapSphere(posicionSpawn, radioDeteccion, capaTorres);
+            if (objetosEncontrados.Length > 0)
+            {
+                Debug.LogWarning("TowerBuilder: ubicación ocupada por otra torre.");
+                return;
+            }
         }
 
-        if (Time.time < nextBuildTime)
-        {
-            float tiempoRestante = nextBuildTime - Time.time;
-            Debug.Log($"Tarjeta en recarga. Espera {tiempoRestante:F1} segundos.");
-            return;
-        }
-
-        Vector3 posicionLocalEnTerreno = terrenoPrincipal.InverseTransformPoint(transform.position);
-        posicionLocalEnTerreno.y += alturaOffsetLocal;
-        Vector3 posicionMundoCalculada = terrenoPrincipal.TransformPoint(posicionLocalEnTerreno);
-
-        Collider[] objetosEncontrados = Physics.OverlapSphere(posicionMundoCalculada, radioDeteccion, capaTorres);
-
-        if (objetosEncontrados.Length > 0)
-        {
-            Debug.LogWarning("¡Ubicación ocupada!");
-            return;
-        }
-
-        ColocarTorre(posicionLocalEnTerreno);
+        ColocarTorre(posicionSpawn);
     }
 
-    void ColocarTorre(Vector3 posicionLocalEnTerreno)
+    private void ColocarTorre(Vector3 posicionSpawn)
     {
-        if (torrePrefab == null || terrenoPrincipal == null)
+        Transform destinoPadre = padreTorre != null ? padreTorre : transform;
+
+        GameObject nuevaTorre = Instantiate(
+            torrePrefab,
+            posicionSpawn,
+            Quaternion.Euler(0f, transform.eulerAngles.y, 0f),
+            destinoPadre
+        );
+
+        if (nuevaTorre != null)
+        {
+            torreConstruida = true;
+            SetOverlayOscuro(true);
+        }
+    }
+
+    private void SetOverlayOscuro(bool activa)
+    {
+        if (overlayOscuroCompleto == null)
             return;
 
-        GameObject nuevaTorre = Instantiate(torrePrefab, terrenoPrincipal);
-        nuevaTorre.transform.localPosition = posicionLocalEnTerreno;
+        overlayOscuroCompleto.gameObject.SetActive(activa);
 
-        Quaternion rotacionLocalRelativa = Quaternion.Inverse(terrenoPrincipal.rotation) * transform.rotation;
-        nuevaTorre.transform.localRotation = Quaternion.Euler(0f, rotacionLocalRelativa.eulerAngles.y, 0f);
-
-        nextBuildTime = Time.time + cooldownTime;
+        if (activa)
+        {
+            Color c = overlayOscuroCompleto.color;
+            c.r = 0f;
+            c.g = 0f;
+            c.b = 0f;
+            c.a = opacidadOscura;
+            overlayOscuroCompleto.color = c;
+        }
     }
 
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Vector3 centro = terrenoPrincipal != null
-            ? terrenoPrincipal.TransformPoint(terrenoPrincipal.InverseTransformPoint(transform.position) + Vector3.up * alturaOffsetLocal)
-            : transform.position;
+        Vector3 centro = transform.position + transform.up * alturaOffsetLocal;
         Gizmos.DrawWireSphere(centro, radioDeteccion);
     }
 }
