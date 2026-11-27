@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [Serializable]
@@ -23,35 +24,44 @@ public class EnemySpawnEntry
 [Serializable]
 public class WaveDefinition
 {
-    [Tooltip("Nombre opcional de la oleada, ej: Oleada 1")]
-    public string waveName = "Wave";
+    [Tooltip("Nombre opcional de la oleada, ej: Ronda 1")]
+    public string waveName = "Ronda";
 
     [Min(0.05f)]
     public float defaultSpawnInterval = 1.5f;
 
-    [Tooltip("Tiempo de espera al terminar esta oleada antes de pasar a la siguiente")]
+    [Tooltip("Tiempo de espera al terminar esta ronda antes de que empiece la siguiente")]
     [Min(0f)]
-    public float timeAfterWave = 3f;
+    public float timeAfterWave = 5f;
 
     public List<EnemySpawnEntry> entries = new List<EnemySpawnEntry>();
 }
 
 public class EnemySpawner : MonoBehaviour
 {
-    [Header("Configuración de Oleadas")]
+    [Header("Configuración de Rondas")]
     public List<WaveDefinition> waves = new List<WaveDefinition>();
 
-    [Header("Condición de Fin de Oleada")]
+    [Tooltip("Segundos de preparación antes de que comience la Ronda 1")]
+    [Min(0f)]
+    public float tiempoAntesPrimeraRonda = 20f;
+
+    [Header("Condición de Fin de Ronda")]
+    [Tooltip("Si está activo, espera a que mueran todos los enemigos antes de contar hacia la siguiente ronda")]
     public bool esperarAQueMueranEnemigos = true;
+
+    [Header("UI Temporizador de Ronda")]
+    [Tooltip("Texto TMP que muestra 'RONDA EN: X' y luego 'RONDA X'")]
+    public TMP_Text roundTimerText;
+
+    [Tooltip("Si está activo, muestra décimas de segundo (ej: RONDA EN: 19.4s). Si no, segundos enteros (ej: RONDA EN: 19s)")]
+    public bool mostrarDecimas = true;
 
     [Header("Ruta del Camino")]
     public List<Transform> pathWaypoints = new List<Transform>();
 
     [Header("Castillo")]
     public CastleController castleController;
-
-    [Header("Pruebas de Oleadas")]
-    [SerializeField] private bool iniciarSinEsperarTerreno = false;
 
     private bool waveStarted = false;
     private Coroutine wavesCoroutine;
@@ -67,25 +77,23 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        if (iniciarSinEsperarTerreno)
-        {
-            StartFirstWave();
-        }
+        StartFirstWave();
     }
 
     private void BuscarCastillo()
     {
-        if (castleController != null)
-            return;
-
-        if (pathWaypoints == null || pathWaypoints.Count == 0)
-            return;
-
-        Transform finalWaypoint = pathWaypoints[pathWaypoints.Count - 1];
-
-        if (finalWaypoint != null)
+        if (castleController == null && pathWaypoints != null && pathWaypoints.Count > 0)
         {
-            castleController = finalWaypoint.GetComponentInParent<CastleController>();
+            Transform finalWaypoint = pathWaypoints[pathWaypoints.Count - 1];
+            if (finalWaypoint != null)
+            {
+                castleController = finalWaypoint.GetComponentInParent<CastleController>();
+            }
+        }
+
+        if (castleController == null)
+        {
+            castleController = FindFirstObjectByType<CastleController>();
         }
     }
 
@@ -96,7 +104,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (waves == null || waves.Count == 0)
         {
-            Debug.LogError("EnemySpawner: no hay oleadas configuradas en la lista 'waves'.");
+            Debug.LogError("EnemySpawner: no hay rondas configuradas en la lista 'waves'.");
             return;
         }
 
@@ -110,7 +118,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (castleController == null)
         {
-            Debug.LogWarning("No se encontró el CastleController. Asigná el castillo en el Inspector del Spawner.");
+            Debug.LogWarning("EnemySpawner: no se encontró el CastleController. Asignalo en el Inspector.");
         }
 
         waveStarted = true;
@@ -120,14 +128,26 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator RunAllWaves()
     {
+        if (tiempoAntesPrimeraRonda > 0f)
+        {
+            yield return StartCoroutine(CuentaRegresivaRonda(tiempoAntesPrimeraRonda));
+        }
+
         for (int w = 0; w < waves.Count; w++)
         {
+            if (w > 0 && waves[w - 1] != null && waves[w - 1].timeAfterWave > 0f)
+            {
+                yield return StartCoroutine(CuentaRegresivaRonda(waves[w - 1].timeAfterWave));
+            }
+
             CurrentWaveIndex = w;
+            MostrarTituloRonda(w + 1);
+
             WaveDefinition currentWave = waves[w];
 
             if (currentWave == null || currentWave.entries == null || currentWave.entries.Count == 0)
             {
-                Debug.LogWarning($"EnemySpawner: la oleada {w + 1} está vacía y se omitirá.");
+                Debug.LogWarning($"EnemySpawner: la ronda {w + 1} está vacía y se omitirá.");
                 continue;
             }
 
@@ -163,16 +183,51 @@ public class EnemySpawner : MonoBehaviour
                     yield return new WaitForSeconds(0.25f);
                 }
             }
+        }
 
-            if (w < waves.Count - 1 && currentWave.timeAfterWave > 0f)
-            {
-                yield return new WaitForSeconds(currentWave.timeAfterWave);
-            }
+        if (roundTimerText != null)
+        {
+            roundTimerText.text = "RONDAS COMPLETADAS";
         }
 
         AllWavesFinished = true;
         wavesCoroutine = null;
-        Debug.Log("EnemySpawner: todas las oleadas configuradas han terminado de generarse y completarse.");
+        Debug.Log("EnemySpawner: todas las rondas han terminado.");
+    }
+
+    private IEnumerator CuentaRegresivaRonda(float duracion)
+    {
+        float restante = duracion;
+
+        while (restante > 0f)
+        {
+            ActualizarTextoCuentaRegresiva(restante);
+            yield return null;
+            restante -= Time.deltaTime;
+        }
+
+        ActualizarTextoCuentaRegresiva(0f);
+    }
+
+    private void ActualizarTextoCuentaRegresiva(float segundosRestantes)
+    {
+        if (roundTimerText == null)
+            return;
+
+        float valor = Mathf.Max(0f, segundosRestantes);
+        string tiempoFormateado = mostrarDecimas
+            ? $"{valor:0.0}s"
+            : $"{Mathf.CeilToInt(valor)}s";
+
+        roundTimerText.text = $"RONDA EN: {tiempoFormateado}";
+    }
+
+    private void MostrarTituloRonda(int numeroRonda)
+    {
+        if (roundTimerText == null)
+            return;
+
+        roundTimerText.text = $"RONDA {numeroRonda}";
     }
 
     private bool HayEnemigosVivos()

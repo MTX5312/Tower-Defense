@@ -5,16 +5,19 @@ public class GameFlowController : MonoBehaviour
 {
     [Header("Referencias de Juego")]
     public CastleController castle;
+    public EnemySpawner enemySpawner;
 
     [Header("Paneles de UI")]
     public GameObject pausePanel;
     public GameObject defeatPanel;
+    public GameObject victoryPanel;
 
     [Header("Escenas")]
     [SerializeField] private string mainMenuSceneName = "MainMenu";
 
     private bool isPaused = false;
     private bool defeatTriggered = false;
+    private bool victoryTriggered = false;
 
     void Start()
     {
@@ -26,18 +29,30 @@ public class GameFlowController : MonoBehaviour
         if (defeatPanel != null)
             defeatPanel.SetActive(false);
 
+        if (victoryPanel != null)
+            victoryPanel.SetActive(false);
+
         if (castle == null)
             castle = FindFirstObjectByType<CastleController>();
+
+        if (enemySpawner == null)
+            enemySpawner = FindFirstObjectByType<EnemySpawner>();
     }
 
     void Update()
     {
-        if (defeatTriggered)
+        if (defeatTriggered || victoryTriggered)
             return;
 
         if (castle != null && castle.IsDestroyed)
         {
             TriggerDefeat();
+            return;
+        }
+
+        if (enemySpawner != null && enemySpawner.AllWavesFinished)
+        {
+            TriggerVictory();
             return;
         }
 
@@ -49,7 +64,7 @@ public class GameFlowController : MonoBehaviour
 
     public void TogglePause()
     {
-        if (defeatTriggered)
+        if (defeatTriggered || victoryTriggered)
             return;
 
         if (isPaused)
@@ -60,7 +75,7 @@ public class GameFlowController : MonoBehaviour
 
     public void PauseGame()
     {
-        if (defeatTriggered || isPaused)
+        if (defeatTriggered || victoryTriggered || isPaused)
             return;
 
         isPaused = true;
@@ -81,7 +96,7 @@ public class GameFlowController : MonoBehaviour
 
     public void TriggerDefeat()
     {
-        if (defeatTriggered)
+        if (defeatTriggered || victoryTriggered)
             return;
 
         defeatTriggered = true;
@@ -91,8 +106,30 @@ public class GameFlowController : MonoBehaviour
         if (pausePanel != null)
             pausePanel.SetActive(false);
 
+        if (victoryPanel != null)
+            victoryPanel.SetActive(false);
+
         if (defeatPanel != null)
             defeatPanel.SetActive(true);
+    }
+
+    public void TriggerVictory()
+    {
+        if (victoryTriggered || defeatTriggered)
+            return;
+
+        victoryTriggered = true;
+        isPaused = false;
+        Time.timeScale = 0f;
+
+        if (pausePanel != null)
+            pausePanel.SetActive(false);
+
+        if (defeatPanel != null)
+            defeatPanel.SetActive(false);
+
+        if (victoryPanel != null)
+            victoryPanel.SetActive(true);
     }
 
     public void RestartLevel()
