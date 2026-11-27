@@ -33,10 +33,10 @@ public class GameFlowController : MonoBehaviour
             victoryPanel.SetActive(false);
 
         if (castle == null)
-            castle = FindFirstObjectByType<CastleController>();
+            castle = FindAnyObjectByType<CastleController>();
 
         if (enemySpawner == null)
-            enemySpawner = FindFirstObjectByType<EnemySpawner>();
+            enemySpawner = FindAnyObjectByType<EnemySpawner>();
     }
 
     void Update()

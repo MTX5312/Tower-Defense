@@ -12,7 +12,7 @@ extern void RefSafetyRulesAttribute__ctor_m7C1165CE6885E1D618B4EF938B0D5E8D8DC3D
 extern void InputTracking_InvokeTrackingEvent_mA218CBE5D81A639B9C9A084A5360FEAD4625C42C (void);
 extern void InputTracking_GetNodeStates_mA2E8D154A47C817ED74AD42F6B38A9C906A57A67 (void);
 extern void InputTracking_GetNodeStates_Internal_m6E67CE5EC9C950ED633AEC42F8BD5B15EFE3B916 (void);
-extern void InputTracking_GetNodeStates_Internal_Injected_mCE41C16D7285C493775B512111F3FCDCBFA2524B (void);
+extern void InputTracking_GetNodeStates_Internal_Injected_m1368C548FB0D58121327841C629F1D242796C36B (void);
 extern void XRNodeState_set_uniqueID_m1C42BE763CEB5BE66EECE54288DE28D30CCB085F (void);
 extern void XRNodeState_get_nodeType_mFC49286B25FF7732CE6CAF231A1DE5C083C13932 (void);
 extern void XRNodeState_set_nodeType_m17D747D9C558277596BD29F59FD8FDEE1A892FF4 (void);
@@ -29,7 +29,7 @@ extern void XRSettings_get_eyeTextureDesc_m1581643C4A4C5D80173451213FA6C60C11B38
 extern void XRSettings_get_loadedDeviceName_m13388E5B7E13440842E14B51BE620BC23EC84566 (void);
 extern void XRSettings_get_supportedDevices_m96E9450990E50B846B123E80DBE861A891EFC707 (void);
 extern void XRSettings_get_eyeTextureDesc_Injected_m59C4165EEE6E5CB1D820794A08E52E4BDF4EC653 (void);
-extern void XRSettings_get_loadedDeviceName_Injected_m42423C40A8033EF8A0766B88EEC3C9DF53D3FC0F (void);
+extern void XRSettings_get_loadedDeviceName_Injected_mB3FB14252509C289B57DAB472B372B4CE474339E (void);
 extern void InputFeatureUsage_get_name_mA51C7B42F66E87B3527CBD061D1E6944058FE085 (void);
 extern void InputFeatureUsage_get_internalType_m39EE9801AA983980676998D910C3A906191F8810 (void);
 extern void InputFeatureUsage_Equals_m490288B62FC8FB23746E66937C85D8600BC150C0 (void);
@@ -70,10 +70,10 @@ extern void InputDevices_TryGetFeatureValue_Vector3f_m765F82CDF7B96A1F616753B9C1
 extern void InputDevices_TryGetFeatureValue_Quaternionf_m7E4BA3BCD07D23060BA8273A1018CD40EB41B1B4 (void);
 extern void InputDevices_GetDeviceName_m0AC6649B2A6AF0394487068FC82DFFA6D33A3D92 (void);
 extern void InputDevices_GetDeviceCharacteristics_m484271629C390D593B073791099D05EC8F45CDF9 (void);
-extern void InputDevices_GetDevices_Internal_Injected_m22676E3806648471243AE7A21D191D068BD29ECF (void);
-extern void InputDevices_TryGetFeatureValue_Vector3f_Injected_m35686E6176A4EB76C3EF3EA431C41F37B11161B7 (void);
-extern void InputDevices_TryGetFeatureValue_Quaternionf_Injected_mFF8301EEA25935FC4A5F8F7A7DECDB76753F8C47 (void);
-extern void InputDevices_GetDeviceName_Injected_m3B5E22846765BBEE8150870DB5996633973DD714 (void);
+extern void InputDevices_GetDevices_Internal_Injected_m91C9CD6B55053AF87A4F12AE38E9D8F248E0066E (void);
+extern void InputDevices_TryGetFeatureValue_Vector3f_Injected_m52ED91287E1468E2E82A990CAFE7EAB49409B8AE (void);
+extern void InputDevices_TryGetFeatureValue_Quaternionf_Injected_m104D3FE390149159F275596B180CC443821BD6E8 (void);
+extern void InputDevices_GetDeviceName_Injected_m1ED619956687AC2244B8C75CA3C7F4B686DCB510 (void);
 extern void XRDisplaySubsystem_InvokeDisplayFocusChanged_m57036DB43BB9F6BF12AADC268AC47D190378BE56 (void);
 extern void XRDisplaySubsystem_get_appliedViewportScale_m59AAF66BC6B53F953F22F96EC1C8635F2B0A6480 (void);
 extern void XRDisplaySubsystem_set_scaleOfAllRenderTargets_mB17201481C1A22DB287CA1B6DEC07C6679BD2DB8 (void);
@@ -201,7 +201,7 @@ extern void XRMeshSubsystem_GetUpdatedMeshTransforms_m1D7E5E319F6C2D8C46C2AD21C5
 extern void XRMeshSubsystem_TryGetSubmeshClassifications_mDCCED5B1A49E1E2EE8D292BDD98089271431D592 (void);
 extern void XRMeshSubsystem_NativeTryGetSubmeshClassifications_m991FC21B2490899A704DB8C4B227C997C3704772 (void);
 extern void XRMeshSubsystem__ctor_mA9C27A31A690B9023F70B628A9D9F5E3F5ED2AEA (void);
-extern void XRMeshSubsystem_GetMeshInfosAsList_Injected_m9F482C8BA3687832FC09AC3D19F41749BF6892CE (void);
+extern void XRMeshSubsystem_GetMeshInfosAsList_Injected_m7086D6330F547030ACFA2132D62FDB577C0A1850 (void);
 extern void XRMeshSubsystem_GenerateMeshAsync_Injected_m926C98B2E2B6C70154748C456C33DEDAD24E53E3 (void);
 extern void XRMeshSubsystem_GetMeshGenerationResult_Injected_m1613F4597F4C9317A28EE02D982B06FDE7C4E933 (void);
 extern void XRMeshSubsystem_get_meshDensity_Injected_mBD90F5C6B40CEA848895DFAF75A2C79D639B56DC (void);
@@ -227,7 +227,7 @@ static Il2CppMethodPointer s_methodPointers[220] =
 	InputTracking_InvokeTrackingEvent_mA218CBE5D81A639B9C9A084A5360FEAD4625C42C,
 	InputTracking_GetNodeStates_mA2E8D154A47C817ED74AD42F6B38A9C906A57A67,
 	InputTracking_GetNodeStates_Internal_m6E67CE5EC9C950ED633AEC42F8BD5B15EFE3B916,
-	InputTracking_GetNodeStates_Internal_Injected_mCE41C16D7285C493775B512111F3FCDCBFA2524B,
+	InputTracking_GetNodeStates_Internal_Injected_m1368C548FB0D58121327841C629F1D242796C36B,
 	XRNodeState_set_uniqueID_m1C42BE763CEB5BE66EECE54288DE28D30CCB085F,
 	XRNodeState_get_nodeType_mFC49286B25FF7732CE6CAF231A1DE5C083C13932,
 	XRNodeState_set_nodeType_m17D747D9C558277596BD29F59FD8FDEE1A892FF4,
@@ -244,7 +244,7 @@ static Il2CppMethodPointer s_methodPointers[220] =
 	XRSettings_get_loadedDeviceName_m13388E5B7E13440842E14B51BE620BC23EC84566,
 	XRSettings_get_supportedDevices_m96E9450990E50B846B123E80DBE861A891EFC707,
 	XRSettings_get_eyeTextureDesc_Injected_m59C4165EEE6E5CB1D820794A08E52E4BDF4EC653,
-	XRSettings_get_loadedDeviceName_Injected_m42423C40A8033EF8A0766B88EEC3C9DF53D3FC0F,
+	XRSettings_get_loadedDeviceName_Injected_mB3FB14252509C289B57DAB472B372B4CE474339E,
 	InputFeatureUsage_get_name_mA51C7B42F66E87B3527CBD061D1E6944058FE085,
 	InputFeatureUsage_get_internalType_m39EE9801AA983980676998D910C3A906191F8810,
 	InputFeatureUsage_Equals_m490288B62FC8FB23746E66937C85D8600BC150C0,
@@ -292,10 +292,10 @@ static Il2CppMethodPointer s_methodPointers[220] =
 	InputDevices_TryGetFeatureValue_Quaternionf_m7E4BA3BCD07D23060BA8273A1018CD40EB41B1B4,
 	InputDevices_GetDeviceName_m0AC6649B2A6AF0394487068FC82DFFA6D33A3D92,
 	InputDevices_GetDeviceCharacteristics_m484271629C390D593B073791099D05EC8F45CDF9,
-	InputDevices_GetDevices_Internal_Injected_m22676E3806648471243AE7A21D191D068BD29ECF,
-	InputDevices_TryGetFeatureValue_Vector3f_Injected_m35686E6176A4EB76C3EF3EA431C41F37B11161B7,
-	InputDevices_TryGetFeatureValue_Quaternionf_Injected_mFF8301EEA25935FC4A5F8F7A7DECDB76753F8C47,
-	InputDevices_GetDeviceName_Injected_m3B5E22846765BBEE8150870DB5996633973DD714,
+	InputDevices_GetDevices_Internal_Injected_m91C9CD6B55053AF87A4F12AE38E9D8F248E0066E,
+	InputDevices_TryGetFeatureValue_Vector3f_Injected_m52ED91287E1468E2E82A990CAFE7EAB49409B8AE,
+	InputDevices_TryGetFeatureValue_Quaternionf_Injected_m104D3FE390149159F275596B180CC443821BD6E8,
+	InputDevices_GetDeviceName_Injected_m1ED619956687AC2244B8C75CA3C7F4B686DCB510,
 	XRDisplaySubsystem_InvokeDisplayFocusChanged_m57036DB43BB9F6BF12AADC268AC47D190378BE56,
 	XRDisplaySubsystem_get_appliedViewportScale_m59AAF66BC6B53F953F22F96EC1C8635F2B0A6480,
 	XRDisplaySubsystem_set_scaleOfAllRenderTargets_mB17201481C1A22DB287CA1B6DEC07C6679BD2DB8,
@@ -423,7 +423,7 @@ static Il2CppMethodPointer s_methodPointers[220] =
 	XRMeshSubsystem_TryGetSubmeshClassifications_mDCCED5B1A49E1E2EE8D292BDD98089271431D592,
 	XRMeshSubsystem_NativeTryGetSubmeshClassifications_m991FC21B2490899A704DB8C4B227C997C3704772,
 	XRMeshSubsystem__ctor_mA9C27A31A690B9023F70B628A9D9F5E3F5ED2AEA,
-	XRMeshSubsystem_GetMeshInfosAsList_Injected_m9F482C8BA3687832FC09AC3D19F41749BF6892CE,
+	XRMeshSubsystem_GetMeshInfosAsList_Injected_m7086D6330F547030ACFA2132D62FDB577C0A1850,
 	XRMeshSubsystem_GenerateMeshAsync_Injected_m926C98B2E2B6C70154748C456C33DEDAD24E53E3,
 	XRMeshSubsystem_GetMeshGenerationResult_Injected_m1613F4597F4C9317A28EE02D982B06FDE7C4E933,
 	XRMeshSubsystem_get_meshDensity_Injected_mBD90F5C6B40CEA848895DFAF75A2C79D639B56DC,
@@ -443,66 +443,407 @@ static Il2CppMethodPointer s_methodPointers[220] =
 	BindingsMarshaller_ConvertToNative_m873E8C221570B303628AAE88E421CD8D3DA813A5,
 	XRMeshSubsystemDescriptor__ctor_mFD056F69A8BECE56819411D4CD84653B3B735A1B,
 };
+extern void XRNodeState_set_uniqueID_m1C42BE763CEB5BE66EECE54288DE28D30CCB085F_AdjustorThunk (void);
+extern void XRNodeState_get_nodeType_mFC49286B25FF7732CE6CAF231A1DE5C083C13932_AdjustorThunk (void);
+extern void XRNodeState_set_nodeType_m17D747D9C558277596BD29F59FD8FDEE1A892FF4_AdjustorThunk (void);
+extern void XRNodeState_set_tracked_m5B448272E0E14001A16A150EE7B602ADE1D85A45_AdjustorThunk (void);
+extern void XRNodeState_TryGetPosition_mC17C5DFEEA4062A6D91D7E252DD108829AC4E0A6_AdjustorThunk (void);
+extern void XRNodeState_TryGetRotation_mA7F9597BE3AFE747BF2F95BF491779520FEF7301_AdjustorThunk (void);
+extern void XRNodeState_TryGet_m6C1D3FC5E773BC5E134F37815FB08839489F5630_AdjustorThunk (void);
+extern void XRNodeState_TryGet_m3EC1CBB3B6B823611B82073139949C041CE7C616_AdjustorThunk (void);
+extern void InputFeatureUsage_get_name_mA51C7B42F66E87B3527CBD061D1E6944058FE085_AdjustorThunk (void);
+extern void InputFeatureUsage_get_internalType_m39EE9801AA983980676998D910C3A906191F8810_AdjustorThunk (void);
 extern void InputFeatureUsage_Equals_m490288B62FC8FB23746E66937C85D8600BC150C0_AdjustorThunk (void);
 extern void InputFeatureUsage_Equals_m77BD3037164E49DCCFE7C912FD67B14D9A0A621D_AdjustorThunk (void);
 extern void InputFeatureUsage_GetHashCode_m823C86783F2394534F08BF9F56F4A23656D8E34D_AdjustorThunk (void);
+extern void InputDevice__ctor_mC7506750471891883425541E9DE3EB23D8FE4E34_AdjustorThunk (void);
+extern void InputDevice_get_deviceId_mF3FFF56432109EF58AC2EE178FA343261E950A19_AdjustorThunk (void);
+extern void InputDevice_get_name_mAEA08A3755E715697022C54227556428CEF4E1CE_AdjustorThunk (void);
+extern void InputDevice_get_characteristics_mEEDC9AB2254C155C47B48848FECF347A87925ADB_AdjustorThunk (void);
+extern void InputDevice_IsValidId_m13527A66E7D03B0C9AA64C2FFCC4A2F3889756BB_AdjustorThunk (void);
+extern void InputDevice_TryGetFeatureValue_m472B5ECE996FB7440CACCF1E85722DA4963E3167_AdjustorThunk (void);
+extern void InputDevice_TryGetFeatureValue_m0C1A9761DD0D1C6D1EF4BAB2FAF1BC1A9541BB9F_AdjustorThunk (void);
 extern void InputDevice_Equals_m206193EDB0C7A69C0BDFC821CE87B887C7BE0CAC_AdjustorThunk (void);
 extern void InputDevice_Equals_mD6717F0B7B8605BB9F616947C1A3289C52ED41FC_AdjustorThunk (void);
 extern void InputDevice_GetHashCode_m4F8831F85A8646E52B12B5431BEC004AD1BAAD9D_AdjustorThunk (void);
+extern void Hand_get_deviceId_m3FD7DC0BD8EBE55A433CBDB6F3D9486D6491714A_AdjustorThunk (void);
+extern void Hand_get_featureIndex_mD4AFCDFAEE8471B59400FF25F84328FA17229775_AdjustorThunk (void);
 extern void Hand_Equals_m2BEF7EF009B595519DA0ADBE1912C197CEAD2E06_AdjustorThunk (void);
 extern void Hand_Equals_mA5FFEB3581A5E053717C0718AD68E596E801C864_AdjustorThunk (void);
 extern void Hand_GetHashCode_mC1EA0B4473AFA966324B32BAC552ADB9BA9D24EE_AdjustorThunk (void);
+extern void Eyes_get_deviceId_m673FE292832DCAB360282083381923052944EBFD_AdjustorThunk (void);
+extern void Eyes_get_featureIndex_mC4D34E37C0C008A69E75136C501F8907BC4F2EE8_AdjustorThunk (void);
 extern void Eyes_Equals_m4DC0E274FA64B59ED26E913BE0C95554476F228D_AdjustorThunk (void);
 extern void Eyes_Equals_mE463ABC100B9BDB2790A18804BAD09FA1F289969_AdjustorThunk (void);
 extern void Eyes_GetHashCode_m754EAF148F82A79A7DD39D5F0D294EC4ABC763C8_AdjustorThunk (void);
+extern void Bone_get_deviceId_mA75E5FA9A3288C5F5E4172D7632FE228487BE0F1_AdjustorThunk (void);
+extern void Bone_get_featureIndex_mF108AEAE50FFD1B908846717BBD95C59665925BE_AdjustorThunk (void);
 extern void Bone_Equals_mDC77AF51237B5937D83C048DF2734EB7162620F7_AdjustorThunk (void);
 extern void Bone_Equals_mB8585697810AA19D6DD257F9479F01993739020F_AdjustorThunk (void);
 extern void Bone_GetHashCode_mF14BB3AB7B7F52290CDF5D6A7C63AE11B3294F82_AdjustorThunk (void);
+extern void XRRenderPass_GetRenderParameter_m3526E26F8ABDA52C52BDF163F4EA74B7DE4B6A0B_AdjustorThunk (void);
+extern void XRRenderPass_GetRenderParameterCount_m8FECAAF96CD4DF45B0786CB19CD169C1C46BE10A_AdjustorThunk (void);
+extern void XRMirrorViewBlitDesc_GetBlitParameter_m3464A6CB2461B550C808BC4CF3B5AA2EDBCBD17C_AdjustorThunk (void);
 extern void MeshId_ToString_m8D2D9206A924A86FF28CF6499B7C66941FD0E7D4_AdjustorThunk (void);
 extern void MeshId_GetHashCode_mC6B6428EB5856505023C0D48879B92C2E3F062B0_AdjustorThunk (void);
 extern void MeshId_Equals_m1106B9A800E87442FE36125FD3EC3CB12FD778E9_AdjustorThunk (void);
 extern void MeshId_Equals_m3D0AC754FDC327819342797C38CF20C5F3D25818_AdjustorThunk (void);
+extern void MeshGenerationResult_get_MeshId_m2260BF3F7EB6ED4F2CF0A8F6BEFDD2CD82B6751D_AdjustorThunk (void);
+extern void MeshGenerationResult_get_Mesh_m95A022CCC5DDD8D0E8B9CEB3A2D3E06A0E7210F9_AdjustorThunk (void);
+extern void MeshGenerationResult_get_MeshCollider_m07210E3B1723B5BA535250E2012755AAC46FB180_AdjustorThunk (void);
+extern void MeshGenerationResult_get_Status_m392754927B1E28DB2E6078A212F8FCC013AC10C0_AdjustorThunk (void);
+extern void MeshGenerationResult_get_Attributes_m62E3E9EC74240C37D818481B1243B3EB40424C6B_AdjustorThunk (void);
+extern void MeshGenerationResult_get_Timestamp_m3D0F0FD234467DF615695ECBB381AFE33030F6CE_AdjustorThunk (void);
+extern void MeshGenerationResult_get_Position_m72AE25CA3412AE3C653251095067B496CEC1617F_AdjustorThunk (void);
+extern void MeshGenerationResult_get_Rotation_mC27F07EC357E8B3EED94DBEE5365B33154941EE3_AdjustorThunk (void);
+extern void MeshGenerationResult_get_Scale_mA3CEB3EA848509F5B1A5525F40A45AA9CB8BD5D3_AdjustorThunk (void);
 extern void MeshGenerationResult_Equals_m7A6C6A94553E313F74FB2B44326CF32FC94E122F_AdjustorThunk (void);
 extern void MeshGenerationResult_Equals_mE32D058EBA520E8CC77A08119D82AE735CE0ACAC_AdjustorThunk (void);
 extern void MeshGenerationResult_GetHashCode_mA542C935FE2ABB8EC0A3CE001267176095F7DCBC_AdjustorThunk (void);
+extern void MeshInfo_get_MeshId_m96D69F5BA60A596D7C9FAAF0931940452E3D8846_AdjustorThunk (void);
+extern void MeshInfo_get_ChangeState_mF366492B8EF4A9FC8F677E01A6BA4C6C75D3BF68_AdjustorThunk (void);
+extern void MeshInfo_get_PriorityHint_mDBD3A096EC571EAAFB1E6CB93F4F309BD70F9231_AdjustorThunk (void);
+extern void MeshInfo_set_PriorityHint_mA0F4BB9543846770A082A85C721E16D16F664615_AdjustorThunk (void);
 extern void MeshInfo_Equals_m832745EC601145A6C99A608A49B6B750C0B8B5F1_AdjustorThunk (void);
 extern void MeshInfo_Equals_m8D4446A3EBBC42CDF8E0637EC4CFD00AB89B12C6_AdjustorThunk (void);
 extern void MeshInfo_GetHashCode_mFA72664A2E6A9B6E86CE36C2D211B8D2AC22250E_AdjustorThunk (void);
+extern void MeshTransform_get_MeshId_m6B6006910DA8EF0DDB517424DDBCC2DD5B7E92B9_AdjustorThunk (void);
+extern void MeshTransform_get_Timestamp_m63A9BEB7A7544ABA72AFBCF9A4CBA043C872FDFD_AdjustorThunk (void);
+extern void MeshTransform_get_Position_m4E4F6240B8F9DBE4634C1CA346AAFAC1555197E9_AdjustorThunk (void);
+extern void MeshTransform_get_Rotation_m1DE1FC2459EC908BCB7A2F82EDFCE437BC211F8F_AdjustorThunk (void);
+extern void MeshTransform_get_Scale_m2C279AD6989B26E8F48402B82312322F0D8B520A_AdjustorThunk (void);
+extern void MeshTransform__ctor_mC589777DA0363B43418905B044E5B5BB4D140F9F_AdjustorThunk (void);
 extern void MeshTransform_Equals_mEE84420FF15F891F3A08C777C91B463712C25200_AdjustorThunk (void);
 extern void MeshTransform_Equals_m2F9F68FEC43A7A1E4F5E45E89EA191CC768C5784_AdjustorThunk (void);
 extern void MeshTransform_GetHashCode_m5EBA0C63B6E23F9024D0A56EFA98B99C5A5CD5F5_AdjustorThunk (void);
+extern void MeshTransformList__ctor_m7B11F4035F0C79BEEC061590F37136CF7AC16B71_AdjustorThunk (void);
+extern void MeshTransformList_get_Count_m971FEDFD7B9522D8D122B2414E58A3E5A3B81F8A_AdjustorThunk (void);
+extern void MeshTransformList_get_Data_m98A09C2E5F2744566323EB52A47A0F002139C40D_AdjustorThunk (void);
 extern void MeshTransformList_Dispose_m0F0B77B84E50F02EB1A48751831808F9C69E0636_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[29] = 
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[77] = 
 {
+	{ 0x06000007, XRNodeState_set_uniqueID_m1C42BE763CEB5BE66EECE54288DE28D30CCB085F_AdjustorThunk },
+	{ 0x06000008, XRNodeState_get_nodeType_mFC49286B25FF7732CE6CAF231A1DE5C083C13932_AdjustorThunk },
+	{ 0x06000009, XRNodeState_set_nodeType_m17D747D9C558277596BD29F59FD8FDEE1A892FF4_AdjustorThunk },
+	{ 0x0600000A, XRNodeState_set_tracked_m5B448272E0E14001A16A150EE7B602ADE1D85A45_AdjustorThunk },
+	{ 0x0600000B, XRNodeState_TryGetPosition_mC17C5DFEEA4062A6D91D7E252DD108829AC4E0A6_AdjustorThunk },
+	{ 0x0600000C, XRNodeState_TryGetRotation_mA7F9597BE3AFE747BF2F95BF491779520FEF7301_AdjustorThunk },
+	{ 0x0600000D, XRNodeState_TryGet_m6C1D3FC5E773BC5E134F37815FB08839489F5630_AdjustorThunk },
+	{ 0x0600000E, XRNodeState_TryGet_m3EC1CBB3B6B823611B82073139949C041CE7C616_AdjustorThunk },
+	{ 0x06000018, InputFeatureUsage_get_name_mA51C7B42F66E87B3527CBD061D1E6944058FE085_AdjustorThunk },
+	{ 0x06000019, InputFeatureUsage_get_internalType_m39EE9801AA983980676998D910C3A906191F8810_AdjustorThunk },
 	{ 0x0600001A, InputFeatureUsage_Equals_m490288B62FC8FB23746E66937C85D8600BC150C0_AdjustorThunk },
 	{ 0x0600001B, InputFeatureUsage_Equals_m77BD3037164E49DCCFE7C912FD67B14D9A0A621D_AdjustorThunk },
 	{ 0x0600001C, InputFeatureUsage_GetHashCode_m823C86783F2394534F08BF9F56F4A23656D8E34D_AdjustorThunk },
+	{ 0x06000024, InputDevice__ctor_mC7506750471891883425541E9DE3EB23D8FE4E34_AdjustorThunk },
+	{ 0x06000025, InputDevice_get_deviceId_mF3FFF56432109EF58AC2EE178FA343261E950A19_AdjustorThunk },
+	{ 0x06000026, InputDevice_get_name_mAEA08A3755E715697022C54227556428CEF4E1CE_AdjustorThunk },
+	{ 0x06000027, InputDevice_get_characteristics_mEEDC9AB2254C155C47B48848FECF347A87925ADB_AdjustorThunk },
+	{ 0x06000028, InputDevice_IsValidId_m13527A66E7D03B0C9AA64C2FFCC4A2F3889756BB_AdjustorThunk },
+	{ 0x06000029, InputDevice_TryGetFeatureValue_m472B5ECE996FB7440CACCF1E85722DA4963E3167_AdjustorThunk },
+	{ 0x0600002A, InputDevice_TryGetFeatureValue_m0C1A9761DD0D1C6D1EF4BAB2FAF1BC1A9541BB9F_AdjustorThunk },
 	{ 0x0600002C, InputDevice_Equals_m206193EDB0C7A69C0BDFC821CE87B887C7BE0CAC_AdjustorThunk },
 	{ 0x0600002D, InputDevice_Equals_mD6717F0B7B8605BB9F616947C1A3289C52ED41FC_AdjustorThunk },
 	{ 0x0600002E, InputDevice_GetHashCode_m4F8831F85A8646E52B12B5431BEC004AD1BAAD9D_AdjustorThunk },
+	{ 0x0600002F, Hand_get_deviceId_m3FD7DC0BD8EBE55A433CBDB6F3D9486D6491714A_AdjustorThunk },
+	{ 0x06000030, Hand_get_featureIndex_mD4AFCDFAEE8471B59400FF25F84328FA17229775_AdjustorThunk },
 	{ 0x06000031, Hand_Equals_m2BEF7EF009B595519DA0ADBE1912C197CEAD2E06_AdjustorThunk },
 	{ 0x06000032, Hand_Equals_mA5FFEB3581A5E053717C0718AD68E596E801C864_AdjustorThunk },
 	{ 0x06000033, Hand_GetHashCode_mC1EA0B4473AFA966324B32BAC552ADB9BA9D24EE_AdjustorThunk },
+	{ 0x06000034, Eyes_get_deviceId_m673FE292832DCAB360282083381923052944EBFD_AdjustorThunk },
+	{ 0x06000035, Eyes_get_featureIndex_mC4D34E37C0C008A69E75136C501F8907BC4F2EE8_AdjustorThunk },
 	{ 0x06000036, Eyes_Equals_m4DC0E274FA64B59ED26E913BE0C95554476F228D_AdjustorThunk },
 	{ 0x06000037, Eyes_Equals_mE463ABC100B9BDB2790A18804BAD09FA1F289969_AdjustorThunk },
 	{ 0x06000038, Eyes_GetHashCode_m754EAF148F82A79A7DD39D5F0D294EC4ABC763C8_AdjustorThunk },
+	{ 0x06000039, Bone_get_deviceId_mA75E5FA9A3288C5F5E4172D7632FE228487BE0F1_AdjustorThunk },
+	{ 0x0600003A, Bone_get_featureIndex_mF108AEAE50FFD1B908846717BBD95C59665925BE_AdjustorThunk },
 	{ 0x0600003B, Bone_Equals_mDC77AF51237B5937D83C048DF2734EB7162620F7_AdjustorThunk },
 	{ 0x0600003C, Bone_Equals_mB8585697810AA19D6DD257F9479F01993739020F_AdjustorThunk },
 	{ 0x0600003D, Bone_GetHashCode_mF14BB3AB7B7F52290CDF5D6A7C63AE11B3294F82_AdjustorThunk },
+	{ 0x0600007D, XRRenderPass_GetRenderParameter_m3526E26F8ABDA52C52BDF163F4EA74B7DE4B6A0B_AdjustorThunk },
+	{ 0x0600007E, XRRenderPass_GetRenderParameterCount_m8FECAAF96CD4DF45B0786CB19CD169C1C46BE10A_AdjustorThunk },
+	{ 0x06000080, XRMirrorViewBlitDesc_GetBlitParameter_m3464A6CB2461B550C808BC4CF3B5AA2EDBCBD17C_AdjustorThunk },
 	{ 0x06000094, MeshId_ToString_m8D2D9206A924A86FF28CF6499B7C66941FD0E7D4_AdjustorThunk },
 	{ 0x06000095, MeshId_GetHashCode_mC6B6428EB5856505023C0D48879B92C2E3F062B0_AdjustorThunk },
 	{ 0x06000096, MeshId_Equals_m1106B9A800E87442FE36125FD3EC3CB12FD778E9_AdjustorThunk },
 	{ 0x06000097, MeshId_Equals_m3D0AC754FDC327819342797C38CF20C5F3D25818_AdjustorThunk },
+	{ 0x0600009F, MeshGenerationResult_get_MeshId_m2260BF3F7EB6ED4F2CF0A8F6BEFDD2CD82B6751D_AdjustorThunk },
+	{ 0x060000A0, MeshGenerationResult_get_Mesh_m95A022CCC5DDD8D0E8B9CEB3A2D3E06A0E7210F9_AdjustorThunk },
+	{ 0x060000A1, MeshGenerationResult_get_MeshCollider_m07210E3B1723B5BA535250E2012755AAC46FB180_AdjustorThunk },
+	{ 0x060000A2, MeshGenerationResult_get_Status_m392754927B1E28DB2E6078A212F8FCC013AC10C0_AdjustorThunk },
+	{ 0x060000A3, MeshGenerationResult_get_Attributes_m62E3E9EC74240C37D818481B1243B3EB40424C6B_AdjustorThunk },
+	{ 0x060000A4, MeshGenerationResult_get_Timestamp_m3D0F0FD234467DF615695ECBB381AFE33030F6CE_AdjustorThunk },
+	{ 0x060000A5, MeshGenerationResult_get_Position_m72AE25CA3412AE3C653251095067B496CEC1617F_AdjustorThunk },
+	{ 0x060000A6, MeshGenerationResult_get_Rotation_mC27F07EC357E8B3EED94DBEE5365B33154941EE3_AdjustorThunk },
+	{ 0x060000A7, MeshGenerationResult_get_Scale_mA3CEB3EA848509F5B1A5525F40A45AA9CB8BD5D3_AdjustorThunk },
 	{ 0x060000A8, MeshGenerationResult_Equals_m7A6C6A94553E313F74FB2B44326CF32FC94E122F_AdjustorThunk },
 	{ 0x060000A9, MeshGenerationResult_Equals_mE32D058EBA520E8CC77A08119D82AE735CE0ACAC_AdjustorThunk },
 	{ 0x060000AA, MeshGenerationResult_GetHashCode_mA542C935FE2ABB8EC0A3CE001267176095F7DCBC_AdjustorThunk },
+	{ 0x060000AB, MeshInfo_get_MeshId_m96D69F5BA60A596D7C9FAAF0931940452E3D8846_AdjustorThunk },
+	{ 0x060000AC, MeshInfo_get_ChangeState_mF366492B8EF4A9FC8F677E01A6BA4C6C75D3BF68_AdjustorThunk },
+	{ 0x060000AD, MeshInfo_get_PriorityHint_mDBD3A096EC571EAAFB1E6CB93F4F309BD70F9231_AdjustorThunk },
+	{ 0x060000AE, MeshInfo_set_PriorityHint_mA0F4BB9543846770A082A85C721E16D16F664615_AdjustorThunk },
 	{ 0x060000AF, MeshInfo_Equals_m832745EC601145A6C99A608A49B6B750C0B8B5F1_AdjustorThunk },
 	{ 0x060000B0, MeshInfo_Equals_m8D4446A3EBBC42CDF8E0637EC4CFD00AB89B12C6_AdjustorThunk },
 	{ 0x060000B1, MeshInfo_GetHashCode_mFA72664A2E6A9B6E86CE36C2D211B8D2AC22250E_AdjustorThunk },
+	{ 0x060000B2, MeshTransform_get_MeshId_m6B6006910DA8EF0DDB517424DDBCC2DD5B7E92B9_AdjustorThunk },
+	{ 0x060000B3, MeshTransform_get_Timestamp_m63A9BEB7A7544ABA72AFBCF9A4CBA043C872FDFD_AdjustorThunk },
+	{ 0x060000B4, MeshTransform_get_Position_m4E4F6240B8F9DBE4634C1CA346AAFAC1555197E9_AdjustorThunk },
+	{ 0x060000B5, MeshTransform_get_Rotation_m1DE1FC2459EC908BCB7A2F82EDFCE437BC211F8F_AdjustorThunk },
+	{ 0x060000B6, MeshTransform_get_Scale_m2C279AD6989B26E8F48402B82312322F0D8B520A_AdjustorThunk },
+	{ 0x060000B7, MeshTransform__ctor_mC589777DA0363B43418905B044E5B5BB4D140F9F_AdjustorThunk },
 	{ 0x060000B8, MeshTransform_Equals_mEE84420FF15F891F3A08C777C91B463712C25200_AdjustorThunk },
 	{ 0x060000B9, MeshTransform_Equals_m2F9F68FEC43A7A1E4F5E45E89EA191CC768C5784_AdjustorThunk },
 	{ 0x060000BA, MeshTransform_GetHashCode_m5EBA0C63B6E23F9024D0A56EFA98B99C5A5CD5F5_AdjustorThunk },
+	{ 0x060000D4, MeshTransformList__ctor_m7B11F4035F0C79BEEC061590F37136CF7AC16B71_AdjustorThunk },
+	{ 0x060000D5, MeshTransformList_get_Count_m971FEDFD7B9522D8D122B2414E58A3E5A3B81F8A_AdjustorThunk },
+	{ 0x060000D6, MeshTransformList_get_Data_m98A09C2E5F2744566323EB52A47A0F002139C40D_AdjustorThunk },
 	{ 0x060000D7, MeshTransformList_Dispose_m0F0B77B84E50F02EB1A48751831808F9C69E0636_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[220] = 
+{
+	13843,
+	10468,
+	16492,
+	20309,
+	20309,
+	20309,
+	10751,
+	13511,
+	10468,
+	10316,
+	7056,
+	7056,
+	2413,
+	2374,
+	20655,
+	20655,
+	20692,
+	20692,
+	20758,
+	20638,
+	20638,
+	20309,
+	20309,
+	13322,
+	13811,
+	7056,
+	7258,
+	13511,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	20826,
+	10751,
+	13812,
+	13322,
+	13811,
+	13362,
+	3234,
+	3234,
+	-1,
+	7056,
+	7253,
+	13511,
+	13812,
+	13811,
+	7056,
+	7233,
+	13511,
+	13812,
+	13811,
+	7056,
+	7183,
+	13511,
+	13812,
+	13811,
+	7056,
+	7121,
+	13511,
+	19004,
+	20309,
+	20309,
+	19009,
+	20309,
+	16859,
+	16859,
+	19540,
+	20219,
+	20309,
+	16859,
+	16859,
+	19007,
+	10316,
+	13713,
+	10655,
+	13713,
+	10655,
+	10655,
+	10316,
+	10468,
+	8488,
+	8488,
+	10468,
+	10316,
+	13511,
+	5071,
+	3436,
+	10252,
+	7056,
+	10252,
+	7056,
+	2634,
+	2271,
+	6554,
+	13511,
+	10468,
+	2260,
+	2265,
+	13322,
+	13843,
+	20826,
+	20014,
+	18981,
+	20014,
+	18981,
+	18981,
+	18977,
+	18979,
+	18424,
+	18424,
+	18979,
+	18977,
+	19803,
+	16839,
+	18036,
+	18036,
+	15818,
+	18490,
+	19803,
+	18979,
+	15816,
+	15817,
+	2634,
+	13511,
+	16436,
+	5071,
+	19850,
+	20638,
+	13843,
+	13843,
+	13362,
+	7269,
+	13511,
+	13511,
+	10252,
+	10252,
+	20331,
+	20331,
+	13843,
+	19617,
+	18035,
+	19803,
+	19803,
+	19850,
+	13843,
+	13322,
+	13511,
+	7056,
+	7320,
+	18414,
+	17015,
+	16195,
+	15463,
+	14699,
+	14534,
+	14416,
+	13569,
+	13322,
+	13322,
+	13511,
+	13511,
+	13812,
+	13831,
+	13647,
+	13831,
+	7056,
+	7319,
+	13511,
+	13569,
+	13511,
+	13511,
+	10468,
+	7056,
+	7323,
+	13511,
+	13569,
+	13812,
+	13831,
+	13647,
+	13831,
+	1002,
+	7056,
+	7327,
+	13511,
+	7056,
+	7056,
+	572,
+	18976,
+	19900,
+	13713,
+	10655,
+	13362,
+	10316,
+	3650,
+	6244,
+	13513,
+	674,
+	452,
+	13843,
+	18033,
+	14586,
+	18976,
+	20014,
+	18981,
+	19617,
+	18977,
+	16837,
+	19863,
+	14522,
+	10470,
+	13511,
+	13513,
+	13843,
+	19803,
+	19863,
+	20331,
+	19850,
+	13843,
+};
+static const Il2CppTokenRangePair s_rgctxIndices[2] = 
+{
+	{ 0x0200000F, { 0, 5 } },
+	{ 0x0600002B, { 5, 2 } },
+};
+extern const uint32_t g_rgctx_InputFeatureUsage_1_tC3E25C35CC3C47EA8C96D9AD547165F3A28C8211;
+extern const uint32_t g_rgctx_InputFeatureUsage_1_set_name_m9C2C093BBED5BE9C72D51D95FF8D7BD9E1B58FDC;
+extern const uint32_t g_rgctx_InputFeatureUsage_1_tC3E25C35CC3C47EA8C96D9AD547165F3A28C8211;
+extern const uint32_t g_rgctx_InputFeatureUsage_1_Equals_m32D9AF9C7F5E3ED62A18CC5A632C325B33CA06EB;
+extern const uint32_t g_rgctx_InputFeatureUsage_1_get_name_m3E355A98DFFCFF3CACAA50623EEA65FAFCCF1F34;
+extern const uint32_t g_rgctx_TU26_t13A298AC79CDB905C6CF36F67BD0F1F63F9600FC;
+extern const uint32_t g_rgctx_T_t0BE7F59F971FBD264FC32E6DC95BC7553CD48284;
+static const Il2CppRGCTXDefinition s_rgctxValues[7] = 
+{
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_InputFeatureUsage_1_tC3E25C35CC3C47EA8C96D9AD547165F3A28C8211 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_InputFeatureUsage_1_set_name_m9C2C093BBED5BE9C72D51D95FF8D7BD9E1B58FDC },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_InputFeatureUsage_1_tC3E25C35CC3C47EA8C96D9AD547165F3A28C8211 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_InputFeatureUsage_1_Equals_m32D9AF9C7F5E3ED62A18CC5A632C325B33CA06EB },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_InputFeatureUsage_1_get_name_m3E355A98DFFCFF3CACAA50623EEA65FAFCCF1F34 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU26_t13A298AC79CDB905C6CF36F67BD0F1F63F9600FC },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t0BE7F59F971FBD264FC32E6DC95BC7553CD48284 },
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule = 
@@ -510,9 +851,15 @@ const Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule =
 	"UnityEngine.XRModule.dll",
 	220,
 	s_methodPointers,
-	29,
+	77,
 	s_adjustorThunks,
+	s_InvokerIndices,
 	0,
+	NULL,
+	2,
+	s_rgctxIndices,
+	7,
+	s_rgctxValues,
 	NULL,
 	NULL,
 	NULL,

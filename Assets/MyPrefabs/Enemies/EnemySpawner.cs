@@ -93,7 +93,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (castleController == null)
         {
-            castleController = FindFirstObjectByType<CastleController>();
+            castleController = FindAnyObjectByType<CastleController>();
         }
     }
 

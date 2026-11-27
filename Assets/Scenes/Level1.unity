@@ -268,6 +268,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 138547394}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &138547399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138547391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 138547394}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBallista
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 138547394}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!114 &155725408 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6020406391647436980, guid: 148af7dff8ee64c4fb82f7053a9c17fe, type: 3}
@@ -369,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: -1826476478, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.VuforiaBehaviour
-  mWorldCenterMode: 0
+  mWorldCenterMode: 2
   mWorldCenter: {fileID: 0}
 --- !u!81 &307119770
 AudioListener:
@@ -538,6 +557,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1357834644547649954, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
       insertIndex: -1
       addedObject: {fileID: 737624539}
+    - targetCorrespondingSourceObject: {fileID: 1357834644547649954, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737624540}
   m_SourcePrefab: {fileID: 100100000, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
 --- !u!1 &581937226
 GameObject:
@@ -664,6 +686,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 737624535}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &737624540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737624532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 737624535}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreAlta
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 737624535}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &866675709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
@@ -699,6 +740,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 866675712}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &866675717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866675709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 866675712}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBaja
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 866675712}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &875945471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
@@ -716,6 +776,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetBehaviour
 --- !u!114 &875945478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875945471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 875945474}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: "TorreCa\xF1on"
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 875945474}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &875945479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1035,6 +1114,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1005035941}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1005035946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005035938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1005035941}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreMago
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1005035941}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1001 &1041620674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1115,6 +1213,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 866675716}
+    - targetCorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 866675717}
   m_SourcePrefab: {fileID: 100100000, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
 --- !u!114 &1380947786 stripped
 MonoBehaviour:
@@ -1601,6 +1702,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7021746372886520724, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 138547398}
+    - targetCorrespondingSourceObject: {fileID: 7021746372886520724, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 138547399}
   m_SourcePrefab: {fileID: 100100000, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
 --- !u!1001 &3630560853398959475
 PrefabInstance:
@@ -1827,6 +1931,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1005035945}
+    - targetCorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005035946}
   m_SourcePrefab: {fileID: 100100000, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
 --- !u!1001 &7756918303599016346
 PrefabInstance:
@@ -1916,6 +2023,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 875945478}
+    - targetCorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 875945479}
   m_SourcePrefab: {fileID: 100100000, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

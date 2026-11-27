@@ -8,7 +8,6 @@
 
 
 extern void CameraCaptureBridge_GetCachedCaptureActionsEnumerator_m5AF96FFFE623D93E1ABDE12DF9E17A420A69C498 (void);
-extern void DebugUIUtilities_GetFoldoutByName_m38080F99FBBB24C66FCE138396D9871BEFA1F7B7 (void);
 extern void InternalRenderGraphValidation_SetAdditionalValidationLayer_m7E17169717A597EC93778D76E4B3603326CE557F (void);
 extern void InternalRenderGraphValidation__ctor_mD73A84ABA9010ADDC8939286A5405D7B167069DF (void);
 extern void OnTileValidationLayer_get_renderGraph_m8489A2B241CD719FEEF498909F87BD6285429C81 (void);
@@ -40,10 +39,9 @@ extern void OnTileValidationLayer_SetLastRasterPass_m05F4012D2B1F4407066274C6C1F
 extern void OnTileValidationLayer_Dispose_mC1A80EDB4A145C46C2648BF21079470E42786B7B (void);
 extern void Pass_Init_m7B382342CD2678E457817E50E1FB22F36CBBB89A (void);
 extern void Pass_Clear_mDBE15CB281CDF8F189394DDE8D58E79D6A239FFE (void);
-static Il2CppMethodPointer s_methodPointers[33] = 
+static Il2CppMethodPointer s_methodPointers[32] = 
 {
 	CameraCaptureBridge_GetCachedCaptureActionsEnumerator_m5AF96FFFE623D93E1ABDE12DF9E17A420A69C498,
-	DebugUIUtilities_GetFoldoutByName_m38080F99FBBB24C66FCE138396D9871BEFA1F7B7,
 	InternalRenderGraphValidation_SetAdditionalValidationLayer_m7E17169717A597EC93778D76E4B3603326CE557F,
 	InternalRenderGraphValidation__ctor_mD73A84ABA9010ADDC8939286A5405D7B167069DF,
 	OnTileValidationLayer_get_renderGraph_m8489A2B241CD719FEEF498909F87BD6285429C81,
@@ -76,15 +74,63 @@ static Il2CppMethodPointer s_methodPointers[33] =
 	Pass_Init_m7B382342CD2678E457817E50E1FB22F36CBBB89A,
 	Pass_Clear_mDBE15CB281CDF8F189394DDE8D58E79D6A239FFE,
 };
+extern void Pass_Init_m7B382342CD2678E457817E50E1FB22F36CBBB89A_AdjustorThunk (void);
+extern void Pass_Clear_mDBE15CB281CDF8F189394DDE8D58E79D6A239FFE_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] = 
+{
+	{ 0x0600001F, Pass_Init_m7B382342CD2678E457817E50E1FB22F36CBBB89A_AdjustorThunk },
+	{ 0x06000020, Pass_Clear_mDBE15CB281CDF8F189394DDE8D58E79D6A239FFE_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[32] = 
+{
+	19489,
+	18880,
+	13843,
+	13322,
+	10252,
+	13843,
+	13322,
+	10252,
+	10252,
+	10252,
+	4481,
+	4481,
+	4530,
+	4530,
+	4481,
+	1081,
+	2098,
+	1081,
+	10252,
+	13843,
+	10252,
+	10252,
+	10252,
+	13843,
+	10252,
+	8488,
+	7056,
+	8488,
+	4530,
+	13843,
+	13843,
+	13843,
+};
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_RenderPipelines_Core_Runtime_Shared_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_RenderPipelines_Core_Runtime_Shared_CodeGenModule = 
 {
 	"Unity.RenderPipelines.Core.Runtime.Shared.dll",
-	33,
+	32,
 	s_methodPointers,
+	2,
+	s_adjustorThunks,
+	s_InvokerIndices,
 	0,
 	NULL,
 	0,
+	NULL,
+	0,
+	NULL,
 	NULL,
 	NULL,
 	NULL,

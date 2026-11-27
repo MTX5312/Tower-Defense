@@ -18,6 +18,13 @@ static Il2CppMethodPointer s_methodPointers[4] =
 	TerrainCollider_get_terrainData_m4B39540CB704719FA710B1D3837D9D1CD39AC07A,
 	TerrainCollider_get_terrainData_Injected_mD0C2991615998A29FC3A91863C21F08CC97C9929,
 };
+static const int32_t s_InvokerIndices[4] = 
+{
+	13843,
+	10468,
+	13322,
+	19863,
+};
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_TerrainPhysicsModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_TerrainPhysicsModule_CodeGenModule = 
 {
@@ -26,7 +33,13 @@ const Il2CppCodeGenModule g_UnityEngine_TerrainPhysicsModule_CodeGenModule =
 	s_methodPointers,
 	0,
 	NULL,
+	s_InvokerIndices,
 	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
 	NULL,
 	NULL,
 	NULL,
