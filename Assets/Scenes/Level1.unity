@@ -287,6 +287,82 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 138547394}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &138547400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138547391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 138547394}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBallista
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 138547394}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &138547404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138547391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 138547394}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBallista
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 138547394}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &138547408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138547391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 138547394}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBallista
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 138547394}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &138547412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138547391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 138547394}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBallista
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 138547394}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!114 &155725408 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6020406391647436980, guid: 148af7dff8ee64c4fb82f7053a9c17fe, type: 3}
@@ -416,7 +492,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -431,7 +507,7 @@ Camera:
     height: 1
   near clip plane: 0.05
   far clip plane: 2000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
@@ -560,6 +636,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1357834644547649954, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
       insertIndex: -1
       addedObject: {fileID: 737624540}
+    - targetCorrespondingSourceObject: {fileID: 1357834644547649954, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737624541}
+    - targetCorrespondingSourceObject: {fileID: 1357834644547649954, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737624545}
+    - targetCorrespondingSourceObject: {fileID: 1357834644547649954, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737624549}
+    - targetCorrespondingSourceObject: {fileID: 1357834644547649954, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737624553}
   m_SourcePrefab: {fileID: 100100000, guid: ddaee489cecdd2e42ad236f3e4c66001, type: 3}
 --- !u!1 &581937226
 GameObject:
@@ -640,6 +728,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &634513435 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1264756963162834215, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+  m_PrefabInstance: {fileID: 1097826502}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetBehaviour
 --- !u!114 &706391295 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2517172720369234892, guid: 8da42e158610e41458c12bd23a1fb849, type: 3}
@@ -687,6 +786,82 @@ MonoBehaviour:
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
 --- !u!114 &737624540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737624532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 737624535}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreAlta
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 737624535}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &737624541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737624532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 737624535}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreAlta
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 737624535}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &737624545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737624532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 737624535}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreAlta
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 737624535}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &737624549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737624532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 737624535}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreAlta
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 737624535}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &737624553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -759,6 +934,82 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 866675712}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &866675718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866675709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 866675712}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBaja
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 866675712}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &866675722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866675709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 866675712}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBaja
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 866675712}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &866675726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866675709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 866675712}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBaja
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 866675712}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &866675730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866675709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 866675712}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreBaja
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 866675712}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &875945471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
@@ -795,6 +1046,82 @@ MonoBehaviour:
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
 --- !u!114 &875945479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875945471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 875945474}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: "TorreCa\xF1on"
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 875945474}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &875945480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875945471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 875945474}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: "TorreCa\xF1on"
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 875945474}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &875945484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875945471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 875945474}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: "TorreCa\xF1on"
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 875945474}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &875945488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875945471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 875945474}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: "TorreCa\xF1on"
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 875945474}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &875945492
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -927,158 +1254,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6416065850807192319, guid: 8da42e158610e41458c12bd23a1fb849, type: 3}
   m_PrefabInstance: {fileID: 962511724}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &989832220
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: roundTimerText
-      value: 
-      objectReference: {fileID: 1380947786}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[1].entries.Array.data[0].count
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[1].entries.Array.data[0].label
-      value: Spear
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[1].entries.Array.data[1].count
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[1].entries.Array.data[1].label
-      value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[0].count
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[0].label
-      value: Spear
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[1].count
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[1].label
-      value: Hammer
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[2].count
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[2].label
-      value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[1].entries.Array.data[0].enemyPrefab
-      value: 
-      objectReference: {fileID: 1926248478535535505, guid: a0b11818ce5486041a77e8f1c8ba958a, type: 3}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[1].entries.Array.data[1].enemyPrefab
-      value: 
-      objectReference: {fileID: 7186169987932396255, guid: de86ceba82716ad448a9876432410dfd, type: 3}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[0].enemyPrefab
-      value: 
-      objectReference: {fileID: 1926248478535535505, guid: a0b11818ce5486041a77e8f1c8ba958a, type: 3}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[1].enemyPrefab
-      value: 
-      objectReference: {fileID: 8645035228520322308, guid: cc23064d23c36c44c9a015d47a80fc19, type: 3}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[2].enemyPrefab
-      value: 
-      objectReference: {fileID: 7186169987932396255, guid: de86ceba82716ad448a9876432410dfd, type: 3}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[1].entries.Array.data[0].customSpawnInterval
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[1].entries.Array.data[1].customSpawnInterval
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[0].customSpawnInterval
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[1].customSpawnInterval
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: waves.Array.data[2].entries.Array.data[2].customSpawnInterval
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5091560105552144948, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_Name
-      value: Level1Environment
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881573204906014765, guid: afae575697a73fd4090483162dbe889f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: afae575697a73fd4090483162dbe889f, type: 3}
---- !u!114 &989832221 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4556692896545203876, guid: afae575697a73fd4090483162dbe889f, type: 3}
-  m_PrefabInstance: {fileID: 989832220}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75693a35e7daa2d459b1befd321b44c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &1005035938 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
@@ -1115,6 +1290,82 @@ MonoBehaviour:
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
 --- !u!114 &1005035946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005035938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1005035941}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreMago
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1005035941}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1005035947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005035938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1005035941}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreMago
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1005035941}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1005035951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005035938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1005035941}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreMago
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1005035941}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1005035955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005035938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1005035941}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TorreMago
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1005035941}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1005035959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1216,29 +1467,125 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 866675717}
+    - targetCorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 866675718}
+    - targetCorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 866675722}
+    - targetCorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 866675726}
+    - targetCorrespondingSourceObject: {fileID: 6328013083941686845, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 866675730}
   m_SourcePrefab: {fileID: 100100000, guid: 0a4fd0e92dea6cf499bea46236a5f1a8, type: 3}
---- !u!114 &1380947786 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4733767113380699887, guid: be2a5424c2f1f16478bd64340da3d507, type: 3}
-  m_PrefabInstance: {fileID: 3630560853398959475}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!114 &1730766449 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3780037371221739246, guid: afae575697a73fd4090483162dbe889f, type: 3}
-  m_PrefabInstance: {fileID: 989832220}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3fe67f0d48c95445a35c22b0e57f9d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CastleController
+--- !u!1001 &1097826502
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1264756963162834215, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: mTrackableName
+      value: DesiertoIcon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264756963162834215, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: mRuntimeTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: d13ccf0984a68044ba557e884ebc91e3, type: 3}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384053603630882359, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244683337333140118, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: yOffset
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244683337333140118, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: levelRoot
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244683337333140118, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: imageTarget
+      value: 
+      objectReference: {fileID: 634513435}
+    - target: {fileID: 2244683337333140118, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: nivelPrefab
+      value: 
+      objectReference: {fileID: 5091560105552144948, guid: afae575697a73fd4090483162dbe889f, type: 3}
+    - target: {fileID: 2244683337333140118, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: alignContinuously
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244683337333140118, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: offsetPosicionLocal.y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470394627505059401, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: mHiddenRoot
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470394627505059401, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: mMeshFilter
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470394627505059401, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: mTargetName
+      value: DesiertoIcon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470394627505059401, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: mMeshRenderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021746372886520724, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+      propertyPath: m_Name
+      value: IT_Terreno
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5909593987993686429, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: efd0e6ab36b503d458977f9a68f45326, type: 3}
 --- !u!1001 &1752923060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1705,6 +2052,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7021746372886520724, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 138547399}
+    - targetCorrespondingSourceObject: {fileID: 7021746372886520724, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 138547400}
+    - targetCorrespondingSourceObject: {fileID: 7021746372886520724, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 138547404}
+    - targetCorrespondingSourceObject: {fileID: 7021746372886520724, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 138547408}
+    - targetCorrespondingSourceObject: {fileID: 7021746372886520724, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 138547412}
   m_SourcePrefab: {fileID: 100100000, guid: 839d0b305b200cd4dbebd5e9529c44b4, type: 3}
 --- !u!1001 &3630560853398959475
 PrefabInstance:
@@ -1725,11 +2084,11 @@ PrefabInstance:
     - target: {fileID: 1915440905985440025, guid: be2a5424c2f1f16478bd64340da3d507, type: 3}
       propertyPath: castle
       value: 
-      objectReference: {fileID: 1730766449}
+      objectReference: {fileID: 0}
     - target: {fileID: 1915440905985440025, guid: be2a5424c2f1f16478bd64340da3d507, type: 3}
       propertyPath: enemySpawner
       value: 
-      objectReference: {fileID: 989832221}
+      objectReference: {fileID: 0}
     - target: {fileID: 4534393878839540117, guid: be2a5424c2f1f16478bd64340da3d507, type: 3}
       propertyPath: m_Name
       value: Interfaz
@@ -1934,6 +2293,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1005035946}
+    - targetCorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005035947}
+    - targetCorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005035951}
+    - targetCorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005035955}
+    - targetCorrespondingSourceObject: {fileID: 8047869931277200058, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005035959}
   m_SourcePrefab: {fileID: 100100000, guid: e7fafd3e4c50f8846a90aa31d384b289, type: 3}
 --- !u!1001 &7756918303599016346
 PrefabInstance:
@@ -2026,6 +2397,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 875945479}
+    - targetCorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 875945480}
+    - targetCorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 875945484}
+    - targetCorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 875945488}
+    - targetCorrespondingSourceObject: {fileID: 3437430717435785300, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 875945492}
   m_SourcePrefab: {fileID: 100100000, guid: 6bfac46d096485344b2150470fd4d5ed, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -2039,4 +2422,4 @@ SceneRoots:
   - {fileID: 5628103252670363236}
   - {fileID: 7756918303599016346}
   - {fileID: 824529883602252243}
-  - {fileID: 989832220}
+  - {fileID: 1097826502}

@@ -17819,7 +17819,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AwaitableCompletionSource_1__ctor_m2CF95
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 100389
+// Method Definition Index: 100401
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t5DD9557B7D1C4D2D2EAC079140B3FC8250957077* AwaitableUtils_1_FromResult_m5C9844548CEEF4CE51554676FFD345013306F34C_gshared (Result_1_t111D8607A9C5C521EC7548CFF8FF071ED1C5528C ___0_result, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17838,7 +17838,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t5DD9557B7D1C4D2D2EAC079140B3FC82
 		return L_1;
 	}
 }
-// Method Definition Index: 100390
+// Method Definition Index: 100402
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AwaitableUtils_1__cctor_mA2D9268CD2B8C8E0383A33267472EC1AD403A58D_gshared (const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17858,7 +17858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AwaitableUtils_1__cctor_mA2D9268CD2B8C8E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 100389
+// Method Definition Index: 100401
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t825EAF106AF1AA7C375CF2D4C95236079AF79E5D* AwaitableUtils_1_FromResult_mAE6DA6DA7352375325C4AB128995C411D4983CDE_gshared (Result_1_t677BFA3D17CB836EB7595003E5C41EE4F4544DA5 ___0_result, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17877,7 +17877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t825EAF106AF1AA7C375CF2D4C9523607
 		return L_1;
 	}
 }
-// Method Definition Index: 100390
+// Method Definition Index: 100402
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AwaitableUtils_1__cctor_mC8F6B2244BD7F2D1F11636A57559F9ABAA7B7CD8_gshared (const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17897,7 +17897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AwaitableUtils_1__cctor_mC8F6B2244BD7F2D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 100389
+// Method Definition Index: 100401
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t9A35C3CFA6CF88CE75E68EB053253B574AF23EB7* AwaitableUtils_1_FromResult_m902BED9C21A1BB206C3A04DFCA7B5BCC1D645C04_gshared (XRResultStatus_tCC9883C2EC8AE64CE75A3B0BD56DEFB134CEC941 ___0_result, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17916,7 +17916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t9A35C3CFA6CF88CE75E68EB053253B57
 		return L_1;
 	}
 }
-// Method Definition Index: 100390
+// Method Definition Index: 100402
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AwaitableUtils_1__cctor_m32627C8AA5C30C5A57EBF29729A7C805A3D5C924_gshared (const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17936,7 +17936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AwaitableUtils_1__cctor_m32627C8AA5C30C5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 100389
+// Method Definition Index: 100401
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t7F2FEF7F3E53E010671259DFBDCF40FEA65869CE* AwaitableUtils_1_FromResult_m215CE4FE1B13A6E4CBA95B20D8523EA439D2CE20_gshared (Il2CppFullySharedGenericAny ___0_result, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17955,7 +17955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t7F2FEF7F3E53E010671259DFBDCF40FE
 		return L_1;
 	}
 }
-// Method Definition Index: 100390
+// Method Definition Index: 100402
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AwaitableUtils_1__cctor_m04A4CFD641F8C2CB16208F1867DD9610B71B0ABE_gshared (const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>

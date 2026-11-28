@@ -39,6 +39,13 @@ public class WaveDefinition
 
 public class EnemySpawner : MonoBehaviour
 {
+    [Header("Inicio por Terreno AR")]
+    [Tooltip("Si está activo, el contador no arranca hasta que WorldAnchor avise que se detectó el ImageTarget del terreno")]
+    public bool iniciarAlDetectarTerreno = true;
+
+    [Tooltip("Texto mostrado mientras se espera detectar el terreno")]
+    public string textoEsperandoTerreno = "APUNTA AL TERRENO";
+
     [Header("Configuración de Rondas")]
     public List<WaveDefinition> waves = new List<WaveDefinition>();
 
@@ -77,6 +84,25 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
+        if (!iniciarAlDetectarTerreno)
+        {
+            StartFirstWave();
+        }
+        else if (roundTimerText != null && !waveStarted)
+        {
+            roundTimerText.text = textoEsperandoTerreno;
+        }
+    }
+
+    /// <summary>
+    /// Llamado por WorldAnchor cuando se detecta el ImageTarget del terreno.
+    /// Inicia el contador de preparación una sola vez.
+    /// </summary>
+    public void NotifyTerrainDetected()
+    {
+        if (waveStarted)
+            return;
+
         StartFirstWave();
     }
 

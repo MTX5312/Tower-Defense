@@ -55901,7 +55901,7 @@ IL2CPP_EXTERN_C  ReadOnlySpan_1_tAA9B039194F393C7347182090D98AC822987FFF1 ReadOn
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 103940
+// Method Definition Index: 103952
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_min_m0D183243301588F5000801E35B451374CD10DFC1_inline (int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
